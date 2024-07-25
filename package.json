@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "accordion": "^3.0.2",
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "swiper": "^11.1.7",
     "vite-plugin-full-reload": "^1.0.5",
