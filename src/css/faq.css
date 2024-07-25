@@ -1,0 +1,135 @@
+.accordion-container {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fafafa;
+  background-color: #1c1d20;
+}
+.ac {
+}
+.ac-header {
+}
+.ac-trigger {
+}
+.ac-panel {
+}
+.ac-text {
+}
+
+/* @charset "UTF-8"; */
+
+/* body {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fafafa;
+  background-color: #1c1d20;
+}
+
+h2 {
+  color: #fafafa;
+  background-color: #1c1d20;
+} */
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/*  */
+
+.ac {
+  margin-top: 8px;
+  border: 0px solid #eee !important;
+  background-color: #1c1d20 !important;
+  box-sizing: border-box;
+}
+
+.ac .ac-header {
+  margin: 0;
+  padding: 0 32px !important;
+}
+
+.ac .ac-trigger {
+  /* font: bold 16px 'Arial', sans-serif; */
+  color: #fafafa; /* Колір шрифту */
+  text-align: left;
+  width: 100%;
+
+  padding: 8px 32px 8px 0 !important;
+  display: block;
+  cursor: pointer;
+  background-color: #1c1d20; /* Колір фону */
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+}
+
+.ac .ac-trigger::after {
+  content: '+';
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: #fafafa;
+}
+
+.ac .ac-trigger:focus {
+  color: #8a8a8a;
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+  background-color: #1c1d20;
+}
+
+.ac .ac-panel .ac-text {
+  font: 15px/24px;
+  color: #fafafa;
+  /* padding: 8px; */
+  margin: 0;
+  padding: 0 32px !important;
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: '–';
+}
+
+.text-accordion {
+  color: #fafafa;
+  background-color: #1c1d20;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 32px;
+  }
+
+  .accordion-container {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* два стовпці  */
+    gap: 16px; /* відстань між елементами */
+    margin: 0 auto;
+    color: #fafafa;
+    background-color: #1c1d20;
+  }
+}
