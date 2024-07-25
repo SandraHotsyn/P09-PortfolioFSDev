@@ -7,21 +7,57 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-6999ff10.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-48f34280.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-Header
-      </li>
-    </ul>
-  </nav>
-</header>
+    <header class="header header-container">
+    <div class="header-logo-container">
+        <a href="./index.html" class='header-logo-link'>
+            <img class="header-logo-img" src="../img/image_1x.webp" alt="Logo image" />
+            <span class="header-logo-span">jefferson*</span>
+        </a>
+        <button class="burger-menu-btn" aria-expanded="false" aria-controls="header-overlay">
+            <svg class="header-burger-menu-icon" width="28" height="28">
+                <use href="./img/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <span class="header-menu-text">Menu</span>
+        <div class="header-place-for-btn">
 
+        </div>
+    </div>
+
+    <div id="header-overlay">
+        <div class="header-overlay-modal">
+            <button class="header-mobile-menu-close-btn">
+                <svg class="header-close-icon-svg" width="28" height="28">
+                    <use href="./img/icons.svg#icon-close-x"></use>
+                </svg>
+            </button>
+            <div class="header-nav-wrapper">
+                <ul class="header-nav-list-modal">
+                    <li class="header-nav-list-item">
+                        <a href="#about-me" class="header-nav-list-item-link">About me</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#benefits" class="header-nav-list-item-link">Benefits</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#projects" class="header-nav-list-item-link">Projects</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#faq" class="header-nav-list-item-link">FAQ</a>
+                    </li>
+                </ul>
+                <a href="#work-together" class="header-mobile-order-project-btn">
+                    Order the project
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
     <section>
-  <h1> section Hero</h1>
+  <h1 class="hero"> section Hero</h1>
 </section>
     <section>
     <h1> section About me Accordion</h1>
