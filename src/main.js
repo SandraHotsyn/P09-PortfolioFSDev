@@ -1,5 +1,5 @@
 // ===== FAQ =====
-import { initializeAccordion } from './js/faq';
+import { initializeAccordion } from './js/faq/faq';
 initializeAccordion();
 // === END FAQ ===
 //

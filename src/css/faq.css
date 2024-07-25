@@ -63,7 +63,7 @@ h2 {
 }
 
 .ac .ac-trigger::after {
-  content: '+';
+  content: '>';
   text-align: center;
   width: 15px;
   -webkit-transform: translate(0, -50%);
@@ -102,7 +102,7 @@ h2 {
 }
 
 .ac.is-active > .ac-header .ac-trigger::after {
-  content: '–';
+  content: '^';
 }
 
 .text-accordion {
