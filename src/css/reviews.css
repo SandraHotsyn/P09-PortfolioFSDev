@@ -37,18 +37,7 @@
   /* width: 332px; */
   height: 302px;
 }
-.swiper-pagination {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-}
-/* .swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%);
-} */
+
 .swiper-button-next {
   right: 10px;
 }
