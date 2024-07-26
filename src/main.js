@@ -8,3 +8,5 @@ import { swiper } from './js/projects/projects';
 //
 import { functionHeader } from './js/header/header';
 functionHeader();
+import { reviewSection } from './js/reviews/reviews';
+reviewSection();
