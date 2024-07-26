@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Inter Tight', sans-serif;
-  color: #2c2c2c;
+  color: var(--wht);
+  background-color: var(--blk); 
 }
 
 .container {
