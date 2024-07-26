@@ -33,6 +33,7 @@ html {
   height: 80px;
 }
 .logo-text {
+  color: #fafafa;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.025em;
@@ -48,6 +49,7 @@ html {
   }
 }
 .menu {
+  color:#fafafa;
   padding: 10px;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -119,11 +121,11 @@ html {
   stroke: #fafafa;
 }
 @media  screen and (max-width: 767.98px) {
-  .order-link {
+  .order-links {
     display: none;
   }
 }
-.order-link {
+.order-links {
   color: #fafafa;
   padding: 18px 24px;
   background-color: rgb(237, 59, 68);
@@ -137,8 +139,8 @@ html {
     scale 2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.order-link:hover,
-.order-link:focus {
+.order-links:hover,
+.order-links:focus {
   box-shadow: 0 0 1px #ED3B44, 0 0 5px #ED3B44,
     0 0 10px #ED3B44, 0 0 15px #ED3B44,
     0 0 20px #ED3B44;
@@ -176,7 +178,7 @@ html {
   justify-content: center;
   top: 50%;
   left: 50%;
-  background-image: url();
+  background-image: url('../img/header/HeroMobile@1x.png');
   background-size: cover;
   background-position: center;
 
@@ -187,7 +189,7 @@ html {
 }
 @media  screen and (max-width: 374.98px) and (min-resolution: 192dpi) {
   .modal {
-    background-image: url();
+    background-image: url('../img/header/HeroMobile@2x.png');
   }
 }
 
@@ -217,6 +219,7 @@ html {
   justify-content: center;
 }
 .navi-modal-wrapper {
+  color: #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
