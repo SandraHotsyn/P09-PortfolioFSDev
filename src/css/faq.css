@@ -47,14 +47,14 @@ h2 {
 
 .ac .ac-trigger {
   /* font: bold 16px 'Arial', sans-serif; */
-  color: #fafafa; /* Колір шрифту */
+  /* color: #fafafa; Колір шрифту */
   text-align: left;
   width: 100%;
 
   padding: 8px 32px 8px 0 !important;
   display: block;
   cursor: pointer;
-  background-color: #1c1d20; /* Колір фону */
+  /* background-color: #1c1d20; Колір фону */
   transition: color 0.25s ease;
   position: relative;
   text-decoration: none;
