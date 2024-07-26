@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-e5fe986f.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-496ebd6b.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-06cb6008.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-bdc4efb1.css">
   </head>
   <body>
     <header class="header">
@@ -137,51 +137,67 @@
 </section>
 
     <section class="about-me-accordion">
-  <div class="container-">
+  <div class="container">
     <h2>About Me</h2>
-  </div>
 <section>
   <h2>section About me accordion</h2>
-  <div class="text-box">
-    <h1>I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND <span style="color: red;">FUNCTIONAL</span> WEBSITES THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.</h1>
-</div>
-<div class="image-box">
-    <img src="/P09-PortfolioFSDev/assets/imageaboutmob-2283c471.jpg" alt="Lloyd Jefferson" width="343">
-</div>
+<div class="about-me-description">
+  <ul class="about-me-list">
+    <li class="about-me-item">
+      <div class="about-me-box">
+        <h1 class="about-me-text">
+          I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND 
+          <span style="color: red;">FUNCTIONAL</span> 
+          <span style="color: rgb(153, 153, 153);">WEBSITES</span> 
+          THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY 
+        </h1>
+      </div>
+    </li>
+    <li>
+      <div class="about-me-box">
+        <img class="about-me-images" src="/P09-PortfolioFSDev/assets/imageaboutmob-2283c471.jpg" alt="Lloyd Jefferson" width="343">
+    </div>
+  </li>
+  </ul>
 </div>
 <div>
-    <button onclick="toggleContent('about-me-content')" style="cursor: pointer;">ABOUT ME</button>
-    <div id="about-me-content" style="display: none;">
-        <p class="text-about-me">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development...</p>
+  <ul>
+    <li><button type="button" class="about-me-accordion-button">
+      About me
+    </button>
+      <div>
+      <p>I am Lloyd Jefferson, a talented programmer with 
+      extensive expertise in software development. I have an understanding of different programming languages ​​and 
+      technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, 
+      creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even 
+      the most difficult tasks encountered on the way.</p>
+      <p>Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas 
+        and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful 
+        situations, while maintaining a high quality of work.I am always looking for opportunities for self-improvement. 
+        I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong 
+        understanding of various programming languages, frameworks and architectural concepts that allow me to create 
+        efficient and scalable software.</p>
+    </div>
+</li>
+    <li><button type="button" class="about-me-accordion-button">Role</button>
+      <div>       
+      <p>Frontend development</p>
+      <p>HeadlessCMS, Wordpress</p>
+      <p>Blender (enjoy)</p>
+    </div>
+</li>
+    <li><button type="button" class="about-me-accordion-button">Education</button>
+      <div>
+      <p>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
+      <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+      <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+    </div>
+</li>
+  </ul>
+</div>
     </div>
 </div>
-<div>
-    <button onclick="toggleContent('role-content')" style="cursor: pointer;">ROLE</button>
-    <div id="role-content" style="display: none;">
-        <p>Frontend development</p>
-        <p>HeadlessCMS, Wordpress</p>
-        <p>Blender (enjoy)</p>
-    </div>
 </div>
-<div>
-    <button onclick="toggleContent('education-content')" style="cursor: pointer;">EDUCATION</button>
-    <div id="education-content" style="display: none;">
-        <p>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
-        <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
-        <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
-    </div>
-</div>
-
-<script>
-    function toggleContent(id) {
-        var content = document.getElementById(id);
-        if (content.style.display === "none" || content.style.display === "") {
-            content.style.display = "block";
-        } else {
-            content.style.display = "none";
-        }
-    }
-</script>
 </section>
 
     <section class="about-me-swipper">
