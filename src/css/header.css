@@ -176,7 +176,7 @@ html {
   justify-content: center;
   top: 50%;
   left: 50%;
-  background-image: url();
+  background-image: url('../img/header/HeroMobile@1x.png');
   background-size: cover;
   background-position: center;
 
@@ -187,7 +187,7 @@ html {
 }
 @media  screen and (max-width: 374.98px) and (min-resolution: 192dpi) {
   .modal {
-    background-image: url();
+    background-image: url('../img/header/HeroMobile@2x.png');
   }
 }
 
