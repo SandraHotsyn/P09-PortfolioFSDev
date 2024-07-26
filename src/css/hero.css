@@ -1,6 +1,14 @@
 .hero {
   padding-top: 281px;
   padding-bottom: 32px;
+
+  background: linear-gradient(
+    90deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
+  transform: rotate(-180deg);
 }
 
 .container {
