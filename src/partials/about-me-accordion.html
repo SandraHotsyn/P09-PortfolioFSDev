@@ -1,5 +1,47 @@
 <section class="about-me-accordion">
-  <div class="container">
+  <div class="container-">
     <h2>About Me</h2>
   </div>
+<section>
+  <h2>section About me accordion</h2>
+  <div class="text-box">
+    <h1>I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND <span style="color: red;">FUNCTIONAL</span> WEBSITES THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.</h1>
+</div>
+<div class="image-box">
+    <img src="./img/about-me/imageaboutmob.jpg" alt="Lloyd Jefferson" width="343">
+</div>
+</div>
+<div>
+    <button onclick="toggleContent('about-me-content')" style="cursor: pointer;">ABOUT ME</button>
+    <div id="about-me-content" style="display: none;">
+        <p class="text-about-me">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development...</p>
+    </div>
+</div>
+<div>
+    <button onclick="toggleContent('role-content')" style="cursor: pointer;">ROLE</button>
+    <div id="role-content" style="display: none;">
+        <p>Frontend development</p>
+        <p>HeadlessCMS, Wordpress</p>
+        <p>Blender (enjoy)</p>
+    </div>
+</div>
+<div>
+    <button onclick="toggleContent('education-content')" style="cursor: pointer;">EDUCATION</button>
+    <div id="education-content" style="display: none;">
+        <p>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</p>
+        <p>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+        <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+    </div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
 </section>
