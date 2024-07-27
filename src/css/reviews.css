@@ -94,6 +94,10 @@
   height: 68px;
 }
 
+/* .constainer .swiper-container .swiper-wrapper .swiper-button-next {
+  position: static;
+  display: flex;
+} */
 .swiper-button-next:after {
   content: '→';
 }
