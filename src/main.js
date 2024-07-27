@@ -16,3 +16,7 @@ import { swiper } from './js/projects/projects';
 import { reviewSection } from './js/reviews/reviews';
 reviewSection();
 // ===== END REVIEWS =====
+
+// ===== FOOTER AND MODALS =====
+import './js/work-together/work-together';
+// ===== FOOTER AND MODALS =====
