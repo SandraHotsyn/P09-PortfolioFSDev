@@ -1,5 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <symbol id="icon-header-menu" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M4 11.334h24M4 20.666h24"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 32 32">
+      <path stroke-width="3.556" d="m24 20-8-8-8 8"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path stroke-width="3.556" d="m8 12 8 8 8-8"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M5.334 16h21.334m-8.002-8 8 8-8 8"/>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.56" d="M26.24 16H5.76m7.68 7.68L5.76 16l7.68-7.68"/>
+    </symbol>
     <symbol id="icon-brush" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M17.037 20 12 14.963m-9.333 14.37c2.667 0 6.144.456 7.967-1.367a4.667 4.667 0 0 0-6.6-6.6c-1.823 1.823 0 5.3-1.367 7.967z"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M10.667 21.333c-.655-.656-.983-.983-1.168-1.327a2.637 2.637 0 0 1-.32-1.267c0-.5.138-.968.377-1.368l-.007.012c.197-.336.537-.651 1.217-1.28L23.923 3.92a2.94 2.94 0 0 1 4.153 4.155l.001-.001-12.183 13.159c-.631.68-.945 1.019-1.28 1.217a2.638 2.638 0 0 1-1.357.371c-.464 0-.901-.119-1.281-.327l.014.007c-.343-.185-.671-.513-1.325-1.168z"/>
