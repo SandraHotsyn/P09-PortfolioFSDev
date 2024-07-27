@@ -1,52 +1,43 @@
 .hero {
   padding-top: 281px;
   padding-bottom: 32px;
-}
-
-.hero .container {
   position: relative;
-  /* width: 100%; */
-  /* height: 812px; */
-  overflow: hidden;
-  /* min-height: 100vh; */
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 812px;
+
   background-image: linear-gradient(
     90deg,
-    var(--blk) 49.68%,
-    #69292d 67.73%,
-    var(--red) 100%
+    rgba(194, 48, 56, 1) 50%,
+    var(--blk) 68%
   );
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1;
 }
 
-/* .hero-background::before {
+.hero::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+
   background: url('/img/hero/hero-mob.png') no-repeat center;
   background-size: cover;
-  transform: translate(-50%, -50%) rotate(180deg);
-  z-index: 1;
-} */
+  transform: translate(-50%, -50%);
+  /* width: 375px;
+  height: 812px; */
+  z-index: 0;
+}
+
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero::before {
+    background: url('/img/hero/hero-mob-x2.png');
+  }
+}
 
 .hero-content {
   position: relative;
-  z-index: 2;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  z-index: 1;
 }
 
 .hero-title {
@@ -93,7 +84,9 @@
   .hero-title {
     font-size: 50px;
   }
+
+  .hero-item {
+    font-size: 14px;
+  }
 }
-/* нормальний градік */
-/* background: linear-gradient(90deg, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%); */
-/* закинь новий градієнт на хіроб дивись на розмір контейнеру внизу */
+/* Перероби фонові зображення, кинь на хіро без псевдоелементів */
