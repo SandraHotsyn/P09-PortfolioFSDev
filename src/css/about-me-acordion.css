@@ -1,0 +1,91 @@
+.text-box{
+
+    background-color: #242527;
+}
+.about-me-description {
+    margin-bottom: 32px;
+}
+
+.about-me-accordion {
+    padding-top: 64px;
+
+}
+
+  .about-me-list {
+    display: flex;
+  flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-me-item {
+    border-radius: 24px;
+    background-color: #242527;
+  }
+
+  .about-me-box {
+    max-width: 343px;
+    max-height: 500px;
+    border-radius: 24px;
+  }
+
+  .about-me-text {
+padding: 32px 32px 272px;
+font-weight: 500;
+font-size: 24px;
+line-height: 117%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+font-family: "Inter Tight", sans-serif;
+  }
+
+  .about-me-images {
+    border-radius: 24px;
+
+  }
+
+  .accordion-button-list {
+    padding-bottom: 32px;
+    border-bottom: 4rem red;
+  }
+
+  .about-me-context {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .accordion-button-item {
+    max-width: 343px;
+    max-height: 36px;
+    margin-bottom: 12px;
+    
+  }
+
+  .text-accordion-button {
+    text-transform: uppercase;
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 32px;
+    }
+    /* .about-me-images {
+        content: url('./img/about-me/imageaboutmetab.jpg')
+    } */
+  }
+
+
+
+@media only screen and (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+
+    .about-me-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
