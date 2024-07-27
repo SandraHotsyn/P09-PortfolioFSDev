@@ -36,23 +36,56 @@ line-height: 117%;
 letter-spacing: -0.03em;
 text-transform: uppercase;
 font-family: "Inter Tight", sans-serif;
-color: #fafafa;
   }
 
   .about-me-images {
     border-radius: 24px;
+
   }
 
-  /* @media only screen and (min-width: 768px) {
-    .benefits {
-      padding-top: 96px;
-    }
-} */
+  .accordion-button-list {
+    padding-bottom: 32px;
+    border-bottom: 4rem red;
+  }
 
-/* 
-@media only screen and (min-width: 1440px) {
-    .benefits .container {
-      display: flex;
-      justify-content: space-between;
+  .about-me-context {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .accordion-button-item {
+    max-width: 343px;
+    max-height: 36px;
+    margin-bottom: 12px;
+    
+  }
+
+  .text-accordion-button {
+    text-transform: uppercase;
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 32px;
     }
-} */
+    /* .about-me-images {
+        content: url('./img/about-me/imageaboutmetab.jpg')
+    } */
+  }
+
+
+
+@media only screen and (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+
+    .about-me-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
