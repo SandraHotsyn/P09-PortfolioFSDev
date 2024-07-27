@@ -7,8 +7,8 @@
 .projects-container {
   margin: 64px 16px;
 }
-.swiper-wrapper {
-}
+/* .swiper-wrapper {
+} */
 
 .projects {
   font-weight: 600;
@@ -109,8 +109,8 @@
     background: #242527;
     padding: 120px 45px;
   }
-  .wrap_text {
-  }
+  /* .wrap_text {
+  } */
   .title {
     font-size: 44px;
     line-height: 1;
