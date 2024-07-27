@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 // import 'swiper/css';
 // import Swiper from 'swiper/bundle';
 // import 'swiper/swiper-bundle.min.css';
@@ -31,37 +31,36 @@ export function reviewSection() {
       list.insertAdjacentHTML('beforeend', createListMarkup);
 
       const swiper = new Swiper('.swiper-container', {
-        modules: [Navigation, Pagination],
+        modules: [Keyboard, Navigation],
         direction: 'horizontal',
         loop: true,
-        // slidesPerView: 4,
-        // slidesPerGroup: 4,
-        // spaceBetween: 16,
+
         breakpoints: {
           // when window width is >= 320px
           320: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
           },
           768: {
             slidesPerView: 2,
             slidesPerGroup: 2,
-            spaceBetween: 20,
+            spaceBetween: 16,
           },
           1440: {
             slidesPerView: 4,
             slidesPerGroup: 1,
-            spaceBetween: 20,
+            spaceBetween: 16,
           },
         },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          draggable: true,
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+          pageUpDown: true,
         },
       });
       const revBtnNextEl = document.querySelector('.rev-right-btn ');
