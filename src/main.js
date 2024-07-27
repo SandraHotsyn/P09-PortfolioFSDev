@@ -3,6 +3,12 @@ import { functionHeader } from './js/header/header';
 functionHeader();
 // ===== END HEADER =====
 
+// ==== About me accordion ====
+import { initializeAccordionAboutMe } from './js/about-me-accordion/about-me-accordion';
+initializeAccordionAboutMe();
+// ==== About me accordion ====//
+
+
 // ===== FAQ =====
 import { initializeAccordion } from './js/faq/faq';
 initializeAccordion();

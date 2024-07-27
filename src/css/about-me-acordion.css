@@ -1,7 +1,4 @@
-.text-box{
-
-    background-color: #242527;
-}
+/* 
 .about-me-description {
     margin-bottom: 32px;
 }
@@ -19,13 +16,13 @@
 
   .about-me-item {
     border-radius: 24px;
-    background-color: #242527;
   }
 
   .about-me-box {
     max-width: 343px;
     max-height: 500px;
     border-radius: 24px;
+    background-color: #242527;
   }
 
   .about-me-text {
@@ -36,6 +33,18 @@ line-height: 117%;
 letter-spacing: -0.03em;
 text-transform: uppercase;
 font-family: "Inter Tight", sans-serif;
+  } 
+
+  .accordion-button-item .about-me-accordion-button::after {
+    content: '>';
+  text-align: right;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  left: 300px;
+  top: 50%;
+  color: #fafafa;
   }
 
   .about-me-images {
@@ -45,8 +54,25 @@ font-family: "Inter Tight", sans-serif;
 
   .accordion-button-list {
     padding-bottom: 32px;
-    border-bottom: 4rem red;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+
   }
+
+  .about-me-accordion-button{
+
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+
+    
+  }
+
 
   .about-me-context {
     display: flex;
@@ -58,11 +84,50 @@ font-family: "Inter Tight", sans-serif;
     max-width: 343px;
     max-height: 36px;
     margin-bottom: 12px;
+    margin-top: 20px;
     
   }
 
   .text-accordion-button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    text-align: left;
+  }
+  .content-about-me {
+
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+display: none;
+  }
+  .content-about-me.is-active {
+    display: block;
+  }
+
+  .about-me-item-image {
+    order: 2; 
+  }
+
+  .about-me-item {
+    flex: 1;
+  }
+
+  .about-me-text {
+    padding: 32px;
+  }
+
+  .about-me-images {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .content-about-me {
+    max-width: 70%; 
   }
 
 
@@ -72,9 +137,24 @@ font-family: "Inter Tight", sans-serif;
       width: 768px;
       padding: 0 32px;
     }
-    /* .about-me-images {
-        content: url('./img/about-me/imageaboutmetab.jpg')
-    } */
+    .about-me-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .about-me-box {
+        max-width: 704px;
+        max-width: 700px;
+    }
+    .about-me-text {
+        padding: 64px 64px 436px;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 105%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        font-family: "Inter Tight", sans-serif;
+          } 
+ 
   }
 
 
@@ -88,4 +168,282 @@ font-family: "Inter Tight", sans-serif;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .about-me-box {
+        max-width: 680px;
+        max-width: 700px;
+    }
+    .about-me-text {
+        padding: 64px 64px 436px;
+        
+    }
+
   }
+ 
+  
+   */
+
+
+
+   /* .about-me-description {
+    margin-bottom: 32px;
+  }
+  
+  .about-me-accordion {
+    padding-top: 64px;
+  }
+  
+  .about-me-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .about-me-item {
+    border-radius: 24px;
+  }
+  
+  .about-me-box {
+    max-width: 343px;
+    max-height: 500px;
+    border-radius: 24px;
+    background-color: #242527;
+  }
+  
+  .about-me-text {
+    padding: 32px 32px 272px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+  }
+  
+  .about-me-images {
+    border-radius: 24px;
+  }
+  
+  .accordion-button-list {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  
+  .about-me-accordion-button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    text-align: left;
+  }
+  
+  .content-about-me {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    display: none;
+    background-color: #1c1d20;
+  }
+  
+  .content-about-me.is-active {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 32px;
+    }
+  
+    .about-me-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-box {
+      max-width: 704px;
+    }
+  
+    .about-me-text {
+      padding: 64px 64px 436px;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 105%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      font-family: "Inter Tight", sans-serif;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+  
+    .about-me-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-box {
+      max-width: 700px;
+    }
+  
+    .about-me-text {
+      padding: 64px 64px 436px;
+    }
+  }
+   */
+
+   .about-me-description {
+    margin-bottom: 32px;
+  }
+  
+  .about-me-accordion {
+    padding-top: 64px;
+  }
+  
+  .about-me-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .about-me-item {
+    border-radius: 24px;
+  }
+  
+  .about-me-box {
+    max-width: 343px;
+    max-height: 500px;
+    border-radius: 24px;
+    background-color: #242527;
+  }
+  
+  .about-me-text {
+    padding: 32px 32px 272px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+  }
+  
+  .about-me-images {
+    border-radius: 24px;
+  }
+  
+  .accordion-button-list {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  
+  .about-me-accordion-button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .25s ease;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    text-align: left;
+  }
+  
+  .about-me-accordion-button::after {
+    content: '>';
+    text-align: center;
+    width: 15px;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #fafafa;
+  }
+  
+  .about-me-accordion-button:focus {
+    color: #8a8a8a;
+  }
+  
+  .content-about-me {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease;
+    display: none;
+    background-color: #1c1d20;
+  }
+  
+  .content-about-me.is-active {
+    display: block;
+    visibility: visible;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 32px;
+    }
+  
+    .about-me-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-box {
+      max-width: 704px;
+    }
+  
+    .about-me-text {
+      padding: 64px 64px 436px;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 105%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      font-family: "Inter Tight", sans-serif;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+  
+    .about-me-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-box {
+      max-width: 700px;
+    }
+  
+    .about-me-text {
+      padding: 64px 64px 436px;
+    }
+  }
+  
