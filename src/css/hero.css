@@ -1,27 +1,99 @@
 .hero {
   padding-top: 281px;
   padding-bottom: 32px;
-
-  background: linear-gradient(
-    90deg,
-    #1c1d20 49.68%,
-    #69292d 67.73%,
-    #ed3b44 100%
-  );
-  transform: rotate(-180deg);
 }
 
-.container {
+.hero .container {
+  position: relative;
+  /* width: 100%; */
+  /* height: 812px; */
+  overflow: hidden;
+  /* min-height: 100vh; */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 812px;
+  background-image: linear-gradient(
+    90deg,
+    var(--blk) 49.68%,
+    #69292d 67.73%,
+    var(--red) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+/* .hero-background::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 100vh;
+  background: url('/img/hero/hero-mob.png') no-repeat center;
+  background-size: cover;
+  transform: translate(-50%, -50%) rotate(180deg);
+  z-index: 1;
+} */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 .hero-title {
+  font-weight: 500;
+  font-size: 13vw;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--wht);
+  margin-bottom: 212px;
 }
 
 .hero-list {
+  display: flex;
+  gap: 4px;
 }
 
 .hero-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  transition: border 0.3s ease;
+  font-size: 14px;
+  color: var(--wht);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.socials {
+.hero-item .socials,
+.social-email {
 }
+
+.hero-item:last-child {
+  width: 178px;
+}
+
+@media screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 50px;
+  }
+}
+/* нормальний градік */
+/* background: linear-gradient(90deg, #ed3b44 0%, #69292d 32.27%, #1c1d20 50.32%); */
+/* закинь новий градієнт на хіроб дивись на розмір контейнеру внизу */

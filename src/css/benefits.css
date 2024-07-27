@@ -41,7 +41,7 @@
 .benefit-icon {
   fill: transparent;
   stroke-width: 2px;
-  stroke: #fafafa;
+  stroke: var(--wht);
 }
 
 .benefit-subtitle {
@@ -49,7 +49,7 @@
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--wht);
 
   margin-bottom: 8px;
 }
@@ -72,13 +72,15 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--wht);
   transition: border 0.3s ease;
 }
 
 .order-link:hover,
-.order-link:focus {
-  border: 1px solid #fafafa;
+.order-link:focus,
+.hero-item:hover,
+.hero-item:focus {
+  border: 1px solid var(--wht);
 }
 
 @media only screen and (min-width: 768px) {
