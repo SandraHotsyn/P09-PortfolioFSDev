@@ -16,8 +16,8 @@
 @import url('./faq.css');
 @import url('./covers.css');
 @import url('./reviews.css');
-@import url('./modals.css');
-@import url('./footer.css');
+@import url('./work-together.css');
+@import url('./scroll-up.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
