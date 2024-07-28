@@ -1,23 +1,39 @@
 .scroll-up {
   columns: var(--blk);
   position: fixed;
-  top: 90%;
-  left: 95%;
+  top: 94%;
+  left: 84%;
   transform: translateY(-50%);
-  font-size: 20px;
   cursor: pointer;
-  padding: 10px 15px;
   z-index: 9999;
   display: none;
 }
 
+.go-top--show {
+  display: block;
+}
 .animate__animated.animate__rotateIn {
   --animate-duration: 2s;
 }
 
-@media (min-width: 768px) {
-  .go-top--show {
-    display: block;
+@media screen and (min-width: 375px) {
+  .scroll-up {
+    left: 90%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-up {
+    left: 94%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scroll-up {
+    left: 96%;
+    transform: translateY(-50%);
   }
 }
 
