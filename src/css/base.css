@@ -1,8 +1,22 @@
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 :root {
   --red: #ED3B44;
   --wht: #FAFAFA;
   --blk: #1C1D20;
   --gry: #3B3B3B;
+  --lgr: rgba(250, 250, 250, 0.2);
+  --cbg: #242527;
 }
 
 body {
