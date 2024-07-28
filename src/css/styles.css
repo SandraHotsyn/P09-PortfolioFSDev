@@ -18,6 +18,9 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 
+
+@import url('./features/cursor.css');
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
