@@ -1,3 +1,52 @@
-.scroll-up{
-    columns: var(--blk);
+.scroll-up {
+  columns: var(--blk);
+  position: fixed;
+  top: 94%;
+  left: 84%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+
+.go-top--show {
+  display: block;
+}
+.animate__animated.animate__rotateIn {
+  --animate-duration: 2s;
+}
+
+@media screen and (min-width: 375px) {
+  .scroll-up {
+    left: 90%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-up {
+    left: 94%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scroll-up {
+    left: 96%;
+    transform: translateY(-50%);
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: rgb(237, 59, 68);
+}
+
+.icon-circle-up {
+  width: 35px;
+  height: 35px;
 }
