@@ -1,7 +1,7 @@
 
 
 
- @media (max-width: 375px) {
+ 
     .covers-list {
       animation: marqueeScroll 30s linear infinite;
         display: flex;
@@ -9,8 +9,6 @@
         flex-wrap: wrap;
         width: 200%; 
     }
-    .covers-foto {
-      }
       .covers-foto img {
         width: 544px;
         height: auto;
@@ -39,7 +37,7 @@
           transform: translateX(-50%);
         }
       }
-}
+
   
 
 
