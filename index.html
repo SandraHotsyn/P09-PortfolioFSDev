@@ -24,11 +24,14 @@
     />
     
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-6d211289.js">
+    <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-a8a2071f.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-213259dc.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-faf97c9a.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-8fab63b9.css">
   </head>
   <body>
+    
+<span class="cursor"></span>
+
     <header class="header">
   <div class="header-wrapper container">
     <a href="./index.html" class="logo">
@@ -758,72 +761,49 @@
 
     </main>
     <footer>
-      <section id="work-together" class="section-footer">
-  <div class="footer-work container">
-    <div class="footer-logo">
-      <div class="footer-img">
-        <img
-          srcset="/P09-PortfolioFSDev/assets/lloyd-logo@2x-22d106e8.png 2x, /P09-PortfolioFSDev/assets/lloyd-logo-77865919.png 1x"
-          src="./img/work-together/lloyd-logo.png "
-          alt="Lloyd-logo"
-        />
-      </div>
-
-      <h1 class="footer-title">Let’s <span class="title-red">work</span></h1>
-    </div>
-    <h1 class="footer-title">
-      <span class="title-white">together</span>
-    </h1>
-
+      <section class="work-together" id="order">
+  <div class="container">
+    <h2 class="footer-title">
+      <span class="footer-title-upper-part">Let&rsquo;s <span class="footer-title-accent">work</span></span>
+      <span class="footer-title-lower-part">together</span>
+    </h2>
+    <picture>
+      <source media="(max-width: 767px)" srcset="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA= 1x, data:image/webp;base64,UklGRvwEAABXRUJQVlA4WAoAAAAQAAAAVwAAVwAAQUxQSAUBAAABf0AgQMECPXDB/31GREQKFtfhAbXatuXNE2ZQkVzmCaqjShP8G+TPBFXRhQU6AS1AG/y+jDrM8DN8j+85Ef2fANhmG88L1dv7qh9u61NVoLLkor5Qxa47kheq6IiD4kwV/uG3+1MJ921klTJiNeQ4tdhTSYOmb5Yd05xFASCrtGGgw5MHxjw1FFXepu+ISA0/MSU6TIU+0+GI6WzKdDtn+lCZm1T/DC+o5kwfE6bHEdNZn+mwzbR7x5SUmILZBZEfA54r4ItnF5B4wgBmLB8A8M2yYzpiCZgw4KjBUuIIW+GH4QC2xbk4xW8HSVgzDKeXgpo5OD+ZiXjMwW2x8eJR87rqgy0AVlA4INADAACQFACdASpYAFgAPpFAm0qlo6IhpHM8YLASCWcA0HXC5Q0i0PVbwtyfhY0uk1Lyf/V/sEFkoZsTKj+h8e9AOwI/AhRKPwTZ9miDOWkmG7z7yNB2CPAPv5Ig9UFKiyRCJJZQdDWbjsY6Pxs1m13Vx3NOc2rC5O3O5NwWCyBM2txA29uOdKzKsAr1jG01nuh6kGv4uzEdbZzbzA8Eb3vDWnV+wfJNsFeWzcq9WxqSIAD+9x1ne643oGl3vodW1oWjIpamYONXN4m1vKHNi0g5n4NOg//19C5V15SBUAKqKrI3xMn4FSamxeQiGb0yOIgunKeqzfcCslzYS9/2DFXKXVC4FL0woKJxW6NSLgP9AzBCKTWoh7U/0NSBZQr3MQg6w6F/GFBPn+UyXroKYknXxQJLhuJf29ZpIClvTYci3dncONiQ3V7zYRuXr6bdbWgVFoUkQYVFkEXbkwf+hHcfbVaiNGRwfUULOnha7DyWk1sDSRcR2DeJXoxHNAZjY4ufpLdS2gO7nFyn/bvcBmi75jAIqbsLqiMvRlc3wh/lgU1oB/Jte+g6HPOkc4D7YA6IMou51Ddya9tlP4P41064M+sKdHnhoyJBx9w1LDdYH+qghCSpei/H7HP8WH4bqmhB6gK3Kwzl1CfMPILpVGXUlDxfv6kahS3Ub2h24NUNxBEDnW2pFjoNA9rMWkuHe7zt46q+vfMUUo3xup2qQGGUI/4pD2nSHQqBCz4xCr+1ubJd2eLEJhjhO67V3350NGLQprpFxZc4YokRuGy1q4qiosTR2xkinPUB3ia7ZOdjCiDhCBKv/xlnmd/f8FP+hwK1moE5l+zF0H4OBposw3dwVvzfOKjDe631OQ/kz1krH5JfS/aU+dZmoQ122C2nSa6fhwLPRpdnEY3I9gafP4/YK6nWPs/+YfEwgx8Oqy3JBN1M4lpy3B7WDp/B59I/q2lECi1Kdl/+c9N4fWvXlZPMJ3SfEf0nPcHlJGsLTKu8P/To5PWMXNDzqZ7W03zzMCB6yKrcotCCaLNcnySbrUmW4f8KFj/YHH36Y2h+Z/XlJ5vWenWHNbTYIi2DKzziUN4Max9pb2Rva6nDdKdKhEVXQRcU9RdxPTu99q7EQ5aRF9kWgFEuu8ZtpToSouRKVAUH6O9lHLCKkmEuGiqf0mdLCoou8gfaiBGon5Oe11HB4hKuAGSrzUGQtHXfydn4jX7r53O3g4lKbV3rcB8w2ygTQr50xpwIX8cj3VFyVOpVWBZ5ib0qIpn0624IMv6BqIYPrrzCJvgEYxVwQj3NsGGoAAAA 2x" />
+      <source media="(min-width: 768px)" srcset="data:image/webp;base64,UklGRtADAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSAYBAAABf0AgQMECPXDB/31GREQKFtfhAbfWtrXNa4Zg5TLMPEFqV6EJtIHlCVK5DiyQCWgB2kB9GGszg1j6369NE9H/CYDvdOl5ZAa+z0cRttg3wxtLIYojU+l6IH1kKk4FmBuYqj+ifn+m+n0f3WSmvNqUU489kxt3fZN2XEOSAUA32UmgRpsBurQC5kx6OXLEM5NPAsZqAmabAg47As76Am6HAj5MgWUJ/yVHEoYCPnoCHjsCzpoCDqsCdu8EjGsC4tMjXhQt2hXwRdsFNFoSwID0AQDfpB3XESnmQotSgKdGSXrhh3AA37mhMiPqB01VOYmgl2rKOQQ/GSh4zCHsXOklWPk6H4EvVlA4IKQCAACQDwCdASpGAEYAPpE8mEiloyIhL1K7sLASCWUA0cNwDo/UhVuKB73N/TR9FgifNVlwLAFk83hVJATdlb/UFYlWkUj62VBJwHW+Wz2Edvqg507WhsQKFJGonnrN52GV9roRgsU9/mPI33xcWClubdD4ldtExmE6a3ZjVg3iRZ+CP3D72eKAAP74OZWObaQ3qHDX5YuVIj2A4upIxdoBPQtx4jx6x75qcgp9dHH/RPF7lHkJo6QPgkkcSvCojHon2gjl/z33t0U4n3eUoT5idYGSIHzTRIVpOwzSU46kWLFO6Lh4kA4y0T32qGYIN2L3xvDA6Eucv4fn//6JhhoFBGhvmDewMdg0iuiyjUaLYoz29ELevKC1/3eZ0uAymhqoaBN+BvD9bQLRUwUdtpc3G2AiTzAZ8Rm4ys5C5O110/FmdOvLCnyqoO2HJbmBYTocJyVbzBv/yW1y6H5w3AxgV6XKJ+jaoqrfb8JQw45dknDN6XWSB2hvtLtdwGSB9Lqwqaxa2ZB6JEmmIC+K3PMBr78gQY/SpzxtwbobWw50fjvX6sNkZDf9YSDqCKlYSo4s5F2ndKYn2WRaCgMCrKcaeOGG13tglwSubOIDbhxk4p+jXX1yqs9QaGtEtkTe1SJfUvn5W1x+gwJw3JwR2/vn6b4MKJ+537mjX6nudvmxqveKjml50RD7CKow6/jQgOeWaqqGDwSMymxcnYdEN70nN2fJeW2HuwLIYI6KSjbSDTO7MgEitlvvQpr7XD0j6NGnX4cdGAtdwxnMHY060QiAt+o6OGRmGPeYkc4xQ0nzUX/y1a2K/Bka0RwwDj5ECIBYqEdN54WWO3iAuyhZxwbHz5oitLT/RZzl3m2ekeAgO+8/uoAHn94X5TZxQN3tDmG6zXvAAAAA 1x, data:image/webp;base64,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 2x" />
+      <img src="data:image/webp;base64,UklGRlICAABXRUJQVlA4WAoAAAAQAAAAKwAAKwAAQUxQSIwAAAABX0AgQBlkgR7wSESE4I67AZzW2rY2b7myHn/fBWgDrmQYoZ4ZR4iNi2L6x0vSvrYuov8TAKBw9+WXWj2JsPDkj5tkSJU/twGsJDELWIwORMDQkmtJzRucosmZepxPwFHkX9znaB7nY3NaOqd25OREwNCSsBgtYMjIAFB/awKAcH/5JEMQl+AbZZQAAFZQOCCgAQAA8AgAnQEqLAAsAD6RQp1LJaOioac4CACwEgljAMArMEubneifwwS337cVGzezGRrgC+Zd91Vr6jUNZ+hvRYcY+MeDHRPMGRhvt+I7V1WVPcAA/vwSzrrgOGUUKMX2gt5gKctThqmYyKUJViCmAN/S0P1+52tEybJ5qPuSNeHdUqjOUyh1/Yd0dRbAmDdFy7JMhET96bLa3ToCMDQ3vBPkN8NQouRc+OE28Xd+6hW3BhTEWmlu5dtFC8vkZJTL5OIPUL+e4Z0MNQdJmS9IMICu02MC5CNnd0+nRZffD9kgbizxuo1DHOVwGCGFx3LLJdlHzRa/cGD/RyM2zYrhY7wvmPwCWDFeHi5eSrUAcZBKjIjKtsYXa6n8DuUbpa4Qpr2zxh0wcBUeDdok+H0swPQZ1nIm9kHT3JZ6nWmHipajnpL50/PcqeXz3s3tI9v5nzCM9MnkTNWnDhSwO069F7OAkLffZJc5s6EDnyQgpz4B94IzksRtWBVOI8Nkyi0t8Yov+fDuRzJutjH5fgMf2sfh307RfbMgPsy+/m2hjdlpIAA=" alt="Lloyd Jefferson"
+        class="footer-title-image" width="44" height="44" loading="lazy" />
+    </picture>
     <form class="footer-form">
-      <label class="label-form" for="email">Email:</label>
-      <input
-        class="footer-input-email"
-        type="email"
-        name="email"
-        placeholder="clients@gmail.com"
-        required
-      />
-      <label class="label-form" for="comment">Comments:</label>
-      <input
-        class="footer-input-comment"
-        name="comment"
-        placeholder="comments"
-        required
-      />
-      <button class="footer-btn" type="submit">Send</button>
-    </form>
-
-    <div class="footer-contact-links">
-      <a href="mailto:lloydjefferson@gmail.com" class="footer-contact-btn"
-        >lloydjefferson@gmail.com</a
-      >
-      <a href="tel:+380111111111" class="footer-contact-btn"
-        >+380 11 1111 11 11</a
-      >
-    </div>
-
-    <div class="backdropp backdropp-hidden">
-      <div class="backdropp-container">
-        <button
-          type="button"
-          class="footer-close-btn"
-          id="footer-close-btn"
-          name="Close-mobile-menu"
-        >
-          <svg class="close-btn-img" width="32" height="32">
-            <use href="../img/symbol-defs.svg#icon-mobile-menu-close"></use>
-          </svg>
-        </button>
-        <div class="container-message">
-          <h3 class="footer-modal-header"></h3>
-          <p class="footer-modal-p"></p>
-        </div>
+      <div class="footer-input-container">
+        <input type="text" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
+          spellcheck="false" autocomplete="off" />
+        <div class="footer-label success-label visually-hidden">Success!</div>
+        <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
       </div>
-    </div>
+      <div class="footer-input-container">
+        <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
+          spellcheck="false" autocomplete="off" />
+      </div>
+      <button class="footer-send-button" type="submit" aria-label="send form">Send</button>
+    </form>
+    <address class="footer-address">
+      <a href="mailto:lloydjefferson@gmail.com" class="footer-link" aria-label="send email">lloydjefferson@gmail.com</a>
+      <a href="tel:+3801111111111" class="footer-link" aria-label="call phone number">+380 11 1111 11 11</a>
+    </address>
   </div>
+  <div class="footer-bg-image"></div>
 </section>
-
+<div class="footer-modal-backdrop visually-hidden">
+  <div class="footer-modal-overlay visually-hidden">
+    <button class="footer-modal-close-button" type="button" name="close_button" aria-label="close modal window">
+      <svg class="footer-modal-close-button-icon" height="22" width="22">
+        <use href="../img/symbol-defs.svg#icon-mobile-menu-close"></use>
+      </svg>
+    </button>
+    <h3 class="footer-modal-title" id="title">footer modal</h3>
+    <p class="footer-modal-description" id="message"></p>
+  </div>
+</div>
     </footer>
 
    
