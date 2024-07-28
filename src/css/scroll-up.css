@@ -11,8 +11,14 @@
   display: none;
 }
 
-.go-top--show {
-  display: block;
+.animate__animated.animate__rotateIn {
+  --animate-duration: 2s;
+}
+
+@media (min-width: 768px) {
+  .go-top--show {
+    display: block;
+  }
 }
 
 .icon {
