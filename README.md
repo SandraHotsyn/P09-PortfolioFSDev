@@ -1,4 +1,4 @@
-Project 09 JavaScript
+**Project 09 JavaScript**
 
 Team Lead - @Sandra Hotsyn
 
