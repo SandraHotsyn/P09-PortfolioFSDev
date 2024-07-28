@@ -1,12 +1,36 @@
 <section class="reviews">
   <div class="container">
-    <h2 class="rev-title">rewiews</h2>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <ul class="reviews-list"></ul>
+    <h2 class="reviews-title">Reviews</h2>
+
+    <div class="reviews-swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+
+      <div class="reviews-swiper-arrows-container">
+        <button
+          type="button"
+          class="reviews-swiper-button reviews-swiper-button-left"
+        >
+          <svg class="reviews-icon">
+            <use href="/img/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="reviews-swiper-button reviews-swiper-button-right"
+        >
+          <svg class="reviews-icon">
+            <use href="/img/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <div class="swiper-button-next rev-right-btn"></div>
-      <div class="swiper-button-prev rev-left-btn"></div>
     </div>
   </div>
+
+  <button id="scroll-to-header-btn" class="scroll-to-header-btn">
+    <svg class="scroll-icon">
+      <use href="/img/icons.svg#icon-up"></use>
+    </svg>
+  </button>
+
+  <script type="module" src="/js/fetchReviews.js"></script>
 </section>
