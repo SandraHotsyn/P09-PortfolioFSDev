@@ -12,5 +12,5 @@ Projects - @Саша Нетеса
 Faq - @Віктор
 Covers - @Andrey
 Reviews - @Олександра Савенко
-Footer (Work together)- @Daria Shevchenko
-Scroll to up (adiitional feature) - @Владислав Яворский
+Footer (Work together) + cursor - @Daria Shevchenko
+Scroll to up + animate (adiitional feature) - @Владислав Яворский
