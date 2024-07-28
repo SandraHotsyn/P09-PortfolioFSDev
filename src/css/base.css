@@ -23,6 +23,7 @@ body {
   font-family: 'Inter Tight', sans-serif;
   color: var(--wht);
   background-color: var(--blk); 
+  scroll-behavior: smooth;
 }
 
 .container {
