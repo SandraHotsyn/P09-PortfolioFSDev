@@ -1,56 +1,4 @@
-/* 
- 
- .covers-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    flex-wrap: nowrap;
-    gap: 48px; 
-    animation: marqueeScroll 5s linear infinite;
 
-}
-.covers-foto img {
-    max-width: 100%;
-    height: auto;
-    transform: rotate(16deg) translateY(10px); 
-    transform-origin: center;
-    display: block;
-}
-.covers-foto {
-    flex-shrink: 0;
-    
-}
-.covers-foto {
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-@keyframes marqueeScroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-.covers-container {
-    overflow: hidden; 
-    margin: 0 auto; 
-    max-width: 1440px; 
-    height: 960px;
-    position: relative;
-    right: 800px; 
-     left: 0;
- } 
-
-
-.covers { 
-  margin-top: 164px;
-  backdrop-filter: blur(30px);
-  background: rgba(217, 217, 217, 0.04);
-  
-}  
- */
 
 
  @media (max-width: 375px) {
@@ -80,8 +28,7 @@
             height: 960px;
             position: relative;
             background-image: url('/img/covers/background.png'); 
-          background-size: cover; 
-          
+          background-size: cover;  
           background-repeat: no-repeat; 
       }
       @keyframes marqueeScroll {
@@ -96,16 +43,13 @@
   
 
 
-
   @media (min-width: 768px) {
    .covers-list {
     animation: marqueeScroll 30s linear infinite;
         display: flex;
         gap: 48px;
         flex-wrap: wrap;
-        width: 200%; 
-    
-        
+        width: 200%;   
    } 
    .covers {
     margin-top: 96px;
@@ -116,6 +60,7 @@
     transform: rotate(16deg) translateY(10px) ;
     transform-origin: center;
     display: block;
+    border: none;
   }
   .covers-container {
     overflow: hidden;
@@ -136,15 +81,10 @@
       transform: translateX(-50%);
     }
   }
-
   }
 
 
-
-
   @media (min-width: 1440px) {
-
-  
   .covers-container {
     overflow: hidden;
     margin: 0 auto;
@@ -165,11 +105,9 @@
     gap: 48px;
     flex-wrap: wrap;
     width: 200%; 
-    
     animation: marqueeScroll 30s linear infinite;
   }
   
-
   
   .covers-foto img {
     width: 544px;
