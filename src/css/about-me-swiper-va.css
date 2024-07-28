@@ -38,16 +38,27 @@ body {
     line-height: 200px;
     color: #FAFAFA;
     border: 1px solid rgba(250, 250, 250, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.swiper-slide:nth-child(1) {
+.swiper-slide.active {
     background: #ED3B44;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next {
     color: #FAFAFA;
     width: 40px;
     height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-slide:focus, .swiper-slide:hover {
+    outline: 2px solid #FAFAFA;
+    outline-offset: 4px;
+    transform: scale(1.05);
 }
 
 /* Media Queries for Responsive Design */
@@ -63,7 +74,7 @@ body {
         line-height: 150px;
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next {
         width: 30px;
         height: 30px;
     }
@@ -82,7 +93,7 @@ body {
         line-height: 180px;
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next {
         width: 35px;
         height: 35px;
     }
@@ -100,7 +111,7 @@ body {
         line-height: 200px;
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next {
         width: 40px;
         height: 40px;
     }
