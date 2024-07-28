@@ -1,3 +1,24 @@
-.scroll-up{
-    columns: var(--blk);
+.scroll-up {
+  columns: var(--blk);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  z-index: 9999;
+  display: none;
+}
+
+.go-top--show {
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }

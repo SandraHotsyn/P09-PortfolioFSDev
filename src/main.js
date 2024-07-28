@@ -26,3 +26,6 @@ reviewSection();
 // ===== FOOTER AND MODALS =====
 import './js/work-together/work-together';
 // ===== FOOTER AND MODALS =====
+
+import './js/scroll-up/scroll-up';
+// trackScroll();
