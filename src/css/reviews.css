@@ -86,7 +86,9 @@
   border: 1px solid currentColor;
   transition: border-color var(--wht);
 }
-
+.reviews-swiper-button:hover {
+  border-color: var(--red);
+}
 .reviews-swiper-button-left.swiper-button-disabled,
 .reviews-swiper-button-right.swiper-button-disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
