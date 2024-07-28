@@ -26,7 +26,7 @@
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-a8a2071f.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-213259dc.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-909a35eb.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-12d9fddb.css">
   </head>
   <body>
     
@@ -260,10 +260,19 @@
       </li>
     </ul>
   </div>
-</section>
- -->
+</section> -->
 
- <section class="about-me-accordion">
+<svg style="display: none;">
+  <symbol id="icon-arrow-up" viewBox="0 0 32 32">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2"
+      d="M24 20l-8-8-8 8"></path>
+  </symbol>
+  <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2"
+      d="M24 12l-8 8-8-8"></path>
+  </symbol>
+</svg>
+<section class="about-me-accordion">
   <div class="container">
     <h2 class="visually-hidden">About me accordion</h2>
     <div class="about-me-description">
@@ -305,6 +314,7 @@
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             About me
+            <svg class="icon icon-arrow-up"><use xlink:href="#icon-arrow-up"></use></svg>
           </button>
         </h2>
         <div class="content-about-me is-active">
@@ -335,7 +345,10 @@
       </li>
       <li class="accordion-button-list">
         <h2 class="accordion-button-item">
-          <button type="button" class="about-me-accordion-button">Role</button>
+          <button type="button" class="about-me-accordion-button">
+            Role
+            <svg class="icon icon-arrow-down"><use xlink:href="#icon-arrow-down"></use></svg>
+          </button>
         </h2>
         <div class="content-about-me">
           <div class="content-about-me-text text-wrap-about">
@@ -349,6 +362,7 @@
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             Education
+            <svg class="icon icon-arrow-down"><use xlink:href="#icon-arrow-down"></use></svg>
           </button>
         </h2>
         <div class="content-about-me">
@@ -368,7 +382,6 @@
     </ul>
   </div>
 </section>
-
 
 
 
