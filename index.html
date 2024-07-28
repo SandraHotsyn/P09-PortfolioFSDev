@@ -26,7 +26,7 @@
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-6d211289.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-213259dc.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-3eb9fae2.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-9d6ba2ea.css">
   </head>
   <body>
     <header class="header">
@@ -158,21 +158,30 @@
             </h1>
           </div>
         </li>
-        <li>
+        <li class="about-me-item">
           <div class="about-me-box">
-            <img
-              class="about-me-images"
-              src="/P09-PortfolioFSDev/assets/imageaboutmob-2283c471.jpg"
-              alt="Lloyd Jefferson"
-              width="343"
-              id="about-me-image"
-            />
+            <picture>
+              <source
+                srcset="/P09-PortfolioFSDev/assets/imageaboutmetab-2x-b4338176.jpg 2x, /P09-PortfolioFSDev/assets/imageaboutmetab-b5dd5f6e.jpg 1x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/P09-PortfolioFSDev/assets/imageaboutmemob-2x-9e3de8a6.jpg 2x, /P09-PortfolioFSDev/assets/imageaboutmemob-2283c471.jpg 1x"
+                media="(min-width: 320px)"
+              />
+              <img
+                src="/P09-PortfolioFSDev/assets/imageabout-0083d96d.jpg"
+                width="343"
+                height="500"
+                alt="Example of a banking application"
+              />
+            </picture>
           </div>
         </li>
       </ul>
     </div>
-    <div class="acoordion-about-me-container">
-      <div class="accordion-button-list">
+    <ul class="acoordion-about-me-container">
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             About me
@@ -203,9 +212,8 @@
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="accordion-button-list">
+      </li>
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">Role</button>
         </h2>
@@ -216,8 +224,8 @@
             <p>Blender (enjoy)</p>
           </div>
         </div>
-      </div>
-      <div class="accordion-button-list">
+      </li>
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             Education
@@ -236,10 +244,11 @@
             <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
+
 
     <section class="about-me-swipper">
   <div class="container">
