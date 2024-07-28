@@ -24,7 +24,10 @@ reviewSection();
 // ===== END REVIEWS =====
 
 // ===== FOOTER AND MODALS =====
-import './js/work-together/work-together';
+import { initWorkTogetherSection } from './js/work-together/work-together';
+initWorkTogetherSection();
+import { initCursorFeature } from './js/features/cursor';
+initCursorFeature();
 // ===== FOOTER AND MODALS =====
 
 import {trackScroll} from './js/scroll-up/scroll-up';
