@@ -1,3 +1,5 @@
+import 'animate.css';
+
 const goTopBtn = document.querySelector('.scroll-up');
 
 goTopBtn.addEventListener('click', goTop);
