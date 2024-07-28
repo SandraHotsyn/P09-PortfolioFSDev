@@ -13,21 +13,36 @@
             </h1>
           </div>
         </li>
-        <li>
+        <li class="about-me-item">
           <div class="about-me-box">
-            <img
-              class="about-me-images"
-              src="./img/about-me/imageaboutmob.jpg"
-              alt="Lloyd Jefferson"
-              width="343"
-              id="about-me-image"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./img/about-me/imageaboutmetab-2x.jpg 2x,
+                  ./img/about-me/imageaboutmetab.jpg    1x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/about-me/imageaboutmemob-2x.jpg 2x,
+                  ./img/about-me/imageaboutmemob.jpg   1x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./img/about-me/imageabout.jpg"
+                width="343"
+                height="500"
+                alt="Example of a banking application"
+              />
+            </picture>
           </div>
         </li>
       </ul>
     </div>
-    <div class="acoordion-about-me-container">
-      <div class="accordion-button-list">
+    <ul class="acoordion-about-me-container">
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             About me
@@ -58,9 +73,8 @@
             </p>
           </div>
         </div>
-      </div>
-
-      <div class="accordion-button-list">
+      </li>
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">Role</button>
         </h2>
@@ -71,8 +85,8 @@
             <p>Blender (enjoy)</p>
           </div>
         </div>
-      </div>
-      <div class="accordion-button-list">
+      </li>
+      <li class="accordion-button-list">
         <h2 class="accordion-button-item">
           <button type="button" class="about-me-accordion-button">
             Education
@@ -91,7 +105,8 @@
             <p>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
+
