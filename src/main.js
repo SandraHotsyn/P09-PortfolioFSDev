@@ -27,5 +27,5 @@ reviewSection();
 import './js/work-together/work-together';
 // ===== FOOTER AND MODALS =====
 
-import './js/scroll-up/scroll-up';
-// trackScroll();
+import {trackScroll} from './js/scroll-up/scroll-up';
+trackScroll();
