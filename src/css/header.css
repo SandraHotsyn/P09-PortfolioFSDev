@@ -13,7 +13,6 @@ html {
 }
 
 .header-wrapper {
-  /* padding-top: 32px; */
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
