@@ -18,6 +18,13 @@ body {
     height: 100%;
 }
 
+.swiper-wrapper {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: center;
