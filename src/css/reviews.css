@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .reviews {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -81,7 +84,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid currentColor;
-  transition: border-color var(--trns);
+  transition: border-color var(--wht);
 }
 
 .reviews-swiper-button-left.swiper-button-disabled,
@@ -101,25 +104,21 @@
   width: 24px;
   height: 24px;
   fill: currentColor;
-  transition: fill var(--trns);
+  transition: fill var(--wht);
 }
 
 .reviews-swiper-button-left.swiper-button-disabled .reviews-icon,
 .reviews-swiper-button-right.swiper-button-disabled .reviews-icon {
-  fill: var(--arrow);
+  fill: var(--wht);
 }
 
 .reviews-swiper-button-left .reviews-icon,
 .reviews-swiper-button-right .reviews-icon {
-  fill: var(--main-text);
+  fill: var(--wht);
 }
 
 @media screen and (min-width: 768px) {
-  /* .reviews {
-    padding-top: var(--pb-big);
-    padding-bottom: var(--pb-big);
-  } */
-  .reviews-wrap.swiper-slide {
+  #rev-item-id {
     width: calc(100% / 2 - 16px);
   }
 
@@ -142,6 +141,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  #rev-item-id {
+    width: calc(100% / 4 - 16px);
+  }
+
   .reviews {
     padding-top: 164px;
     padding-bottom: 128x;

@@ -6,7 +6,7 @@ export function renderReviewsSuccess(arr) {
   const markup = arr
     .map(
       ({ author, avatar_url, review }) =>
-        `<li class="reviews-wrap swiper-slide" style="width: 20px">
+        `<li class="reviews-wrap swiper-slide" id='rev-item-id'">
             <img src="${avatar_url}" alt="${author}" class="reviews-img" width='48' height='48' />
             <div class='reviews-content'>
               <h3 class="reviews-subtitle" >${author}</h3>
