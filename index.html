@@ -26,7 +26,7 @@
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-6d211289.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-213259dc.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-3628a8c2.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-3eb9fae2.css">
   </head>
   <body>
     <header class="header">
@@ -577,13 +577,29 @@
   </section>
     <section class="reviews">
   <div class="container">
-    <h2 class="rev-title">rewiews</h2>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <ul class="reviews-list"></ul>
+    <h2 class="reviews-title">Reviews</h2>
+
+    <div class="reviews-swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+
+      <div class="reviews-swiper-arrows-container">
+        <button
+          type="button"
+          class="reviews-swiper-button reviews-swiper-button-left"
+        >
+          <svg class="benefit-icon" width="24" height="24">
+            <use href="/P09-PortfolioFSDev/assets/icons-d7d2edf7.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="reviews-swiper-button reviews-swiper-button-right"
+        >
+          <svg class="benefit-icon" width="24" height="24">
+            <use href="/P09-PortfolioFSDev/assets/icons-d7d2edf7.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <div class="swiper-button-next rev-right-btn"></div>
-      <div class="swiper-button-prev rev-left-btn"></div>
     </div>
   </div>
 </section>
