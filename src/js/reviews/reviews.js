@@ -46,19 +46,9 @@ export function reviewSection() {
       const responseReviews = await fetchReviews();
       renderReviewsSuccess(responseReviews);
     } catch (error) {
-      onError();
       renderReviewsError();
     }
   }
 
   getReviews();
-
-  function onError() {
-    iziToast.error({
-      title: 'Error',
-      message: 'Sorry, there are no reviews!',
-      theme: 'dark',
-      color: 'rgb(239, 64, 64)',
-    });
-  }
 }
