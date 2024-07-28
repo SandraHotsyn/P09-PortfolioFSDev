@@ -6,12 +6,13 @@
   font-size: 20px;
   cursor: pointer;
   padding: 10px 15px;
-  display: none;
+  z-index: 9999;
+  /* display: none; */
 }
 
-.go-top--show {
+/* .go-top--show {
   display: block;
-}
+} */
 
 .icon {
   display: inline-block;
