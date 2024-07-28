@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.about-me-wiper {
+.about-me-swiper {
     width: 80%;
     height: 220px;
     position: relative;
@@ -65,7 +65,7 @@ body {
 
 /* Media Queries for Responsive Design */
 @media screen and (min-width: 375px) {
-    .about-me-wiper {
+    .about-me-swiper {
         width: 375px;
     }
 
@@ -84,7 +84,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .about-me-wiper {
+    .about-me-swiper {
         width: 768px;
         padding: 0 32px;
     }
@@ -104,7 +104,7 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-    .about-me-wiper {
+    .about-me-swiper {
         width: 1440px;
     }
 
