@@ -8,7 +8,8 @@
 
 @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background: url('/img/hero/hero-mob-x2.png');
+    background: url('/img/hero/hero-mob-x2.png') no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -70,7 +71,8 @@
 
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background: url('/img/hero/hero-tab-x2.png');
+      background: url('/img/hero/hero-tab-x2.png') no-repeat center;
+      background-size: cover;
     }
   }
 
@@ -108,7 +110,8 @@
 
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background: url('/img/hero/hero-x2.png');
+      background: url('/img/hero/hero-x2.png') no-repeat center;
+      background-size: cover;
     }
   }
 

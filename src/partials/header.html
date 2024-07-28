@@ -2,9 +2,11 @@
   <div class="header-wrapper container">
     <a href="./index.html" class="logo">
       <img
-        srcset="./img/header/header-logo.png
+        srcset="
+          ./img/header/header-logo@x1.png 1x,
+          ./img/header/header-logo@x2.png 2x
         "
-        src="./img/Header/img-header_1x.jpg"
+        src="./img/header/header-logo@x1.png"
         alt="site logo"
       />
       <p class="logo-text">jefferson*</p>
@@ -30,10 +32,10 @@
     </div>
     <button class="open-menu-btn" type="button" aria-label="Open menu button">
       <svg class="burger-menu" width="28" height="28">
-        <use href="../img/symbol-defs.svg#icon-mobile-menu"></use>
+        <use href="./img/sprite/icons.svg#icon-header-menu"></use>
       </svg>
     </button>
-    <a class="order-links" href="#footer-order"> Order the project </a>
+    <a class="order-links" href="#work-together"> Order the project </a>
   </div>
 </header>
 
@@ -46,7 +48,7 @@
       aria-label="Modal close button"
     >
       <svg class="close-icon" width="28" height="28">
-        <use href="./img/symbol-defs.svg#icon-close"></use>
+        <use href="./img/sprite/icons.svg#icon-close"></use>
       </svg>
     </button>
     <nav class="navi-modal">
