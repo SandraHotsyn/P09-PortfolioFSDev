@@ -99,7 +99,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   footer {
-    padding: 80px 0;
+    padding-bottom: 169px;
   }
 }
 
@@ -251,21 +251,38 @@ footer .container {
   border-color: var(--white-text-color);
 }
 
-.footer-input:focus.input-error {
-  border-color: var(--not-succes-message-color);
+
+    .footer-email-input:not(:placeholder-shown):invalid {
+      outline: none;
+    }
+.footer-email-input[type='email']:valid {
+outline: none;
 }
 
-.footer-input:focus.input-success {
-  border-color: var(--succes-message-color);
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  margin-bottom: 3px;
+  display: none;
 }
 
-.input-error {
-  border-color: var(--not-succes-message-color);
+.text-valid {
+  color: var(--succes-message-color);
 }
 
-.input-success {
-  border-color: var(--succes-message-color);
+.text-invalid {
+  color: var(--not-succes-message-color);
 }
+/* стилізація інформаційного текста при валідному значенні в інпуті */
+.footer-email-input:not(:placeholder-shown):valid~.text-valid {
+  display: block;
+}
+
+/* стилізація інформаційного текста при не валідному значенні в інпуті */
+.footer-email-input:not(:placeholder-shown):invalid~.text-invalid {
+  display: block;
+}
+
 
 .footer-label.is-open {
   opacity: 1;
@@ -282,14 +299,6 @@ footer .container {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
-}
-
-.success-label {
-  color: var(--succes-message-color);
-}
-
-.error-label {
-  color: var(--not-succes-message-color);
 }
 
 .footer-send-button {
@@ -320,12 +329,13 @@ footer .container {
     width: 150px;
     height: 150px;
     margin-top: 0;
+    margin-left: 32px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .footer-send-button {
-    margin-left: 54px;
+    margin-left: 86px;
   }
 
   .footer-send-button:hover,
