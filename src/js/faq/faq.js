@@ -14,14 +14,12 @@ export function initializeAccordion() {
   });
 }
 
-document.querySelectorAll('.ac-trigger').forEach(trigger => {
-  trigger.style.color = '#fafafa';
-});
+const applyStyles = (selector, styles) => {
+  document.querySelectorAll(selector).forEach(element => {
+    Object.assign(element.style, styles);
+  });
+};
 
-document.querySelectorAll('.ac-panel').forEach(panel => {
-  panel.style.backgroundColor = '#1c1d20';
-});
-
-document.querySelectorAll('.ac-text').forEach(text => {
-  text.style.color = '#fafafa';
-});
+applyStyles('.ac-trigger, .ac-text', { color: '#fafafa' });
+applyStyles('.ac-panel, .ac', { backgroundColor: '#1c1d20' });
+applyStyles('.ac', { border: '0px solid #eee' });
