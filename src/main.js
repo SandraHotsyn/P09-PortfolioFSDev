@@ -8,6 +8,8 @@ import { initializeAccordionAboutMe } from './js/about-me-accordion/about-me-acc
 initializeAccordionAboutMe();
 // ==== About me accordion ====//
 
+import './js/about-me-swiper/about-me-swiper';
+
 
 // ===== FAQ =====
 import { initializeAccordion } from './js/faq/faq';
