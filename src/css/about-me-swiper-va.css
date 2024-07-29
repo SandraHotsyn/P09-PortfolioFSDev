@@ -1,63 +1,71 @@
-body {
-    background-color: #222;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .about-me-swiper {
-    width: 80%;
+    width: 100%;
     height: 220px;
     position: relative;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
-.swiper-container {
+.about-me-swiper .swiper-container {
     width: 100%;
     height: 100%;
 }
 
-.swiper-wrapper {
+.about-me-swiper .swiper-wrapper {
     display: flex;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
-.swiper-slide {
+.about-me-swiper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     width: 200px;
     height: 200px;
-    background: #333;
+    /* background: #333; */
     border-radius: 50%;
     text-align: center;
     line-height: 200px;
     color: #FAFAFA;
     border: 1px solid rgba(250, 250, 250, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
-    margin-right: -4px;
+    flex: 0 0 auto;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.swiper-slide.active {
+.about-me-swiper .swiper-slide.active {
     background: #ED3B44;
 }
 
-.swiper-button-next {
-    color: #FAFAFA;
+.about-me-swiper .swiper-button-next {
     width: 40px;
     height: 40px;
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
 }
 
-.swiper-slide:focus, .swiper-slide:hover {
+.about-me-swiper .swiper-button-next::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: solid #3B3B3B;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.about-me-swiper .swiper-slide:focus,
+.about-me-swiper .swiper-slide:hover {
     outline: 2px solid #FAFAFA;
     outline-offset: 4px;
     transform: scale(1.05);
@@ -69,15 +77,14 @@ body {
         width: 375px;
     }
 
-    .swiper-slide {
+    .about-me-swiper .swiper-slide {
         width: 150px;
         height: 150px;
         font-size: 18px;
         line-height: 150px;
-        margin-right: -3px;
     }
 
-    .swiper-button-next {
+    .about-me-swiper .swiper-button-next {
         width: 30px;
         height: 30px;
     }
@@ -89,15 +96,14 @@ body {
         padding: 0 32px;
     }
 
-    .swiper-slide {
+    .about-me-swiper .swiper-slide {
         width: 180px;
         height: 180px;
         font-size: 20px;
         line-height: 180px;
-        margin-right: -3px;
     }
 
-    .swiper-button-next {
+    .about-me-swiper .swiper-button-next {
         width: 35px;
         height: 35px;
     }
@@ -108,15 +114,14 @@ body {
         width: 1440px;
     }
 
-    .swiper-slide {
+    .about-me-swiper .swiper-slide {
         width: 200px;
         height: 200px;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 200px;
-        margin-right: -4px;
     }
 
-    .swiper-button-next {
+    .about-me-swiper .swiper-button-next {
         width: 40px;
         height: 40px;
     }
