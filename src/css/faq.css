@@ -1,3 +1,7 @@
+.faq-container {
+  margin-top: 64px;
+}
+
 .accordion-container {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
@@ -80,22 +84,29 @@
 .ac-header:hover,
 .ac-header:focus {
   /* border: 2px solid currentColor; */
-  border-color: var(--wht);
+  /* border-color: var(--wht); */
   transform: scale(1.03);
 }
 @media only screen and (min-width: 768px) {
-/*   .container {
+  /*   .container {
     max-width: 768px;
     margin-top: 96px;
   } */
+  .faq-container {
+    max-width: 768px;
+    margin-top: 96px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-/*   .container {
+  /*   .container {
     max-width: 1440px;
     margin-top: 164px;
   } */
-
+  .faq-container {
+    max-width: 1440px;
+    margin-top: 164px;
+  }
   .accordion-container {
     max-width: 1440px;
     display: grid;
