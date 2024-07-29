@@ -24,7 +24,7 @@ export function initializeSkillsSwiper() {
       }
     });
 
-    document.querySelectorAll('.about-me-swiper .swiper-slide').forEach(slide => {
+    document.querySelectorAll('.about-me-swiper .test').forEach(slide => {
       slide.addEventListener('click', () => {
         setActiveSlide(slide);
       });
