@@ -1,4 +1,3 @@
-
 .about-me-description {
     margin-bottom: 32px;
   }
@@ -51,11 +50,11 @@
   }
   
   .accordion-button-list.is-active .about-me-accordion-button .icon-arrow-up {
-    display: inline;
+    /* display: inline; */
   }
   
   .accordion-button-list.is-active .about-me-accordion-button .icon-arrow-down {
-    display: none;
+    /* display: none; */
   }
   
   .about-me-accordion-button {
@@ -89,7 +88,7 @@
   }
   
   .about-me-accordion-button .icon-arrow-up {
-    display: none;
+    /* display: none; */
   }
   
   .about-me-accordion-button:focus {
@@ -108,6 +107,18 @@
   
   .content-about-me.is-active {
     visibility: visible;
+  }
+
+  /* //////=====icons=====///// */
+
+  .icon-accordion {
+
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    /* fill: rgb(237, 59, 68); */
   }
   
   @media only screen and (min-width: 768px) {

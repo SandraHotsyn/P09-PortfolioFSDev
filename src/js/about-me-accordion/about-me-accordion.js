@@ -1,31 +1,46 @@
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 export function initializeAccordionAboutMe() {
   document.addEventListener('DOMContentLoaded', () => {
-    const accordion = new Accordion('.acoordion-about-me-container', {
-      duration: 400,
-      showMultiple: true,
-      elementClass: 'accordion-button-list',
-      triggerClass: 'about-me-accordion-button',
-      panelClass: 'content-about-me',
-      activeClass: 'is-active',
-    });
+    const accordionItems = document.querySelectorAll('.accordion-button-list');
 
-    setTimeout(() => {
-      const firstPanel = document.querySelector('.accordion-button-list');
-      if (firstPanel) {
-        firstPanel.classList.add('is-active');
-        const firstContent = firstPanel.querySelector('.content-about-me');
-        if (firstContent) {
-          firstContent.style.height = firstContent.scrollHeight + 'px';
-          firstContent.classList.add('is-active');
+    accordionItems.forEach((item, index) => {
+      const button = item.querySelector('.about-me-accordion-button');
+      const content = item.querySelector('.content-about-me');
+      const iconUse = button.querySelector('svg use');
+
+      button.addEventListener('click', () => {
+        const isActive = item.classList.contains('is-active');
+
+        if (isActive) {
+          item.classList.remove('is-active');
+          content.style.height = '0px';
+          if (iconUse) {
+            iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-down');
+          }
+        } else {
+          item.classList.add('is-active');
+          content.style.height = content.scrollHeight + 'px';
+          if (iconUse) {
+            iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-up');
+          }
         }
+      });
+
+      if (index === 0) {
+        item.classList.add('is-active');
+        content.style.height = content.scrollHeight + 'px';
+        if (iconUse) {
+          iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-up');
+        }
+      } else {
+        content.style.height = '0px';
       }
-    }, 100); 
-  });   
+    });
+  });
 }
+
 
 
 
