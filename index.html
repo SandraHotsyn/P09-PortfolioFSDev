@@ -24,9 +24,9 @@
     />
     
     <script type="module" crossorigin src="/P09-PortfolioFSDev/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-a8a2071f.js">
+    <link rel="modulepreload" crossorigin href="/P09-PortfolioFSDev/assets/vendor-cc7b81af.js">
     <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/vendor-213259dc.css">
-    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-21b26b5b.css">
+    <link rel="stylesheet" href="/P09-PortfolioFSDev/assets/index-f20842be.css">
   </head>
   <body>
     
@@ -911,10 +911,10 @@
     </picture>
     <form class="footer-form">
       <div class="footer-input-container">
-        <input type="text" class="footer-input footer-email-input" name="email" placeholder="clients@gmail.com"
+        <input class="footer-input footer-email-input" type="email" name="email" placeholder="clients@gmail.com"
           spellcheck="false" autocomplete="off" />
-        <div class="footer-label success-label visually-hidden">Success!</div>
-        <div class="footer-label error-label visually-hidden">Invalid email, try again!</div>
+       <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
       </div>
       <div class="footer-input-container">
         <input type="text" class="footer-input footer-comments-input" name="comments" placeholder="comments"
@@ -933,7 +933,7 @@
   <div class="footer-modal-overlay visually-hidden">
     <button class="footer-modal-close-button" type="button" name="close_button" aria-label="close modal window">
       <svg class="footer-modal-close-button-icon" height="22" width="22">
-        <use href="../img/symbol-defs.svg#icon-mobile-menu-close"></use>
+        <use href="../img/sprite/icons.svg#icon-close"></use>
       </svg>
     </button>
     <h3 class="footer-modal-title" id="title">footer modal</h3>
