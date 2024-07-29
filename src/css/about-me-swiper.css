@@ -2,12 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #1C1D20;
     color: white;
-    font-family: Arial, sans-serif;
-    
     width: 100%;
 }
 
@@ -17,8 +14,6 @@
     position: relative;
     width: 100%;
 }
-
-
 
 /* рабочий вариант */
 .circle-container {
@@ -30,9 +25,7 @@
     align-items: center;
 }
 
-
-
-  /* рабочьи вариант */
+/* рабочьи вариант */
 .circle {
     width: 200px;
     height: 200px;
@@ -91,7 +84,6 @@
     position: relative;
 }
 
-
 .arrow-right {
     width: 0;
     height: 0;
@@ -130,11 +122,6 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-
-
-
-
-
 /* .about-me-swiper {
     display: flex;
     justify-content: center;
@@ -142,7 +129,7 @@
     height: 100vh;
     margin: 0;
   }
-  
+ 
   .circle-slider {
     display: flex;
     align-items: center;
@@ -168,7 +155,7 @@
   } 
 
 .circle:first-child {
-    background-color: #e74c3c;
+    background-color: var(--red); /* Інший колір для першого кружечка */
   }
   
   .next-button {
@@ -177,4 +164,3 @@
     font-size: 16px;
     cursor: pointer;
   }
-   */
