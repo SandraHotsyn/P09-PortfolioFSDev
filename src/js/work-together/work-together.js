@@ -72,29 +72,6 @@ export function initWorkTogetherSection() {
     },
   };
 
-  const messages = {
-    showError() {
-      iziToast.error({
-        message: 'Please fill out both fields before sending!',
-        messageColor: '#fafafa',
-        backgroundColor: '#e74a3b',
-        theme: 'dark',
-        closeOnClick: true,
-        timeout: 3000,
-      });
-    },
-    showBadRequest() {
-      iziToast.error({
-        message: 'Something went wrong. Please try again!',
-        messageColor: '#fafafa',
-        backgroundColor: '#e74a3b',
-        theme: 'dark',
-        closeOnClick: true,
-        timeout: 3000,
-      });
-    },
-  };
-
   const userSubmitData = {
     email: null,
     comments: null,
@@ -184,8 +161,6 @@ export function initWorkTogetherSection() {
       removeDataFromLocalStorage();
     } catch (error) {
       console.log(error);
-
-      messages.showBadRequest();
     }
   };
 
