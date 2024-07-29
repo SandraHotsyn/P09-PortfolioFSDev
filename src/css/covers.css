@@ -28,6 +28,7 @@
             background-image: url('/img/covers/background.png'); 
           background-size: cover;  
           background-repeat: no-repeat; 
+          background-position: center;
       }
       @keyframes marqueeScroll {
         from {
