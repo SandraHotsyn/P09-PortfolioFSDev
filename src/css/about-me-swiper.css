@@ -2,10 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
-  }
+ }
   
   .circle-slider {
     display: flex;
@@ -16,24 +14,21 @@
     display: flex;
     transition: transform 0.5s ease;
     overflow: hidden; /* Сховати вміст, що виходить за межі */
-    width: 350px; /* Ширина контейнера з кружечками */
   }
   
   .circle {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background-color: #3498db;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px; /* Відстань між кружечками */
   } 
 
   /* Стилізація для першого кружечка */
 .circle:first-child {
-    background-color: #e74c3c; /* Інший колір для першого кружечка */
+    background-color: var(--red); /* Інший колір для першого кружечка */
   }
   
   .next-button {
