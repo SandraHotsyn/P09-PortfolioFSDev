@@ -17,13 +17,13 @@ export function initializeAccordionAboutMe() {
           item.classList.remove('is-active');
           content.style.height = '0px';
           if (iconUse) {
-            iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-down');
+            iconUse.setAttribute('href', './img/sprite/icons.svg#icon-arrow-down');
           }
         } else {
           item.classList.add('is-active');
           content.style.height = content.scrollHeight + 'px';
           if (iconUse) {
-            iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-up');
+            iconUse.setAttribute('href', './img/sprite/icons.svg#icon-arrow-up');
           }
         }
       });
@@ -32,7 +32,7 @@ export function initializeAccordionAboutMe() {
         item.classList.add('is-active');
         content.style.height = content.scrollHeight + 'px';
         if (iconUse) {
-          iconUse.setAttribute('href', '/img/sprite/icons.svg#icon-arrow-up');
+          iconUse.setAttribute('href', './img/sprite/icons.svg#icon-arrow-up');
         }
       } else {
         content.style.height = '0px';
