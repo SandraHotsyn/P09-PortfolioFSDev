@@ -11,7 +11,7 @@
 
 **About me (Accordion)** - _@Alona Adamska_
 
-**About me (Swiper) - _@Viktor_
+**About me (Swiper)** - _@Viktor_
 
 **Projects** - _@Саша Нетеса_
 
