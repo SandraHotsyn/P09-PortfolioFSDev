@@ -1,11 +1,11 @@
 **PROJECT 09 JavaScript**
 
-**Team Lead** - **_@Sandra Hotsyn_
+**Team Lead** - _@Sandra Hotsyn_
 
-**Scrum Master** -**_@Alona Adamska_
+**Scrum Master** - _@Alona Adamska_
 
 
-**Header** - **_@Olga Synko_
+**Header** - _@Olga Synko_
 
 **Hero & Benefits** - _@Nadiia Yuce_
 
