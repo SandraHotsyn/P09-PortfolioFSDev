@@ -363,7 +363,7 @@ outline: none;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
   text-decoration: none;
-
+  font-style: normal;
   outline: 1px solid var(--button-border-color);
   border-radius: 60px;
   padding: 10px 12px;
