@@ -46,7 +46,7 @@ export const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
     },
     4400: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
   },
 });
