@@ -4,7 +4,8 @@ functionHeader();
 // ===== END HEADER =====
 
 // ==== About me accordion ====
-import './js/about-me-accordion/about-me-accordion';
+import { initializeAccordionAboutMe } from './js/about-me-accordion/about-me-accordion';
+initializeAccordionAboutMe();
 // ==== About me accordion ====//
 
 import './js/about-me-swiper/about-me-swiper';
