@@ -11,12 +11,31 @@ export function initializeAccordion() {
       const closeIcon = button.querySelector('.faq-btn-close');
       openIcon.style.display = 'block';
       closeIcon.style.display = 'none';
-      content.style.display = 'none';
+      content.style.maxHeight = '0';
+      content.style.opacity = '0';
+      content.style.overflow = 'hidden';
+
       header.addEventListener('click', () => {
-        const isVisible = content.style.display === 'block';
-        content.style.display = isVisible ? 'none' : 'block';
-        openIcon.style.display = isVisible ? 'block' : 'none';
-        closeIcon.style.display = isVisible ? 'none' : 'block';
+        const isActive = element.classList.contains('active');
+
+        if (isActive) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              content.style.maxHeight = '0';
+              content.style.opacity = '0';
+            });
+          });
+          openIcon.style.display = 'block';
+          closeIcon.style.display = 'none';
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          content.style.opacity = '1';
+          openIcon.style.display = 'none';
+          closeIcon.style.display = 'block';
+        }
+        element.classList.toggle('active');
       });
     });
   });
