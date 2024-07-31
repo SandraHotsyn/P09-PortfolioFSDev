@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-function initializeAccordionAboutMe() {
+export function initializeAccordionAboutMe() {
   document.addEventListener('DOMContentLoaded', () => {
     const acrdnItems = document.querySelectorAll('.acrdn-button-list');
 
@@ -39,9 +39,7 @@ function initializeAccordionAboutMe() {
       }
     });
   });
-};
-initializeAccordionAboutMe();
-
+}
 
 // import Accordion from 'accordion-js';
 // import 'accordion-js/dist/accordion.min.css';
