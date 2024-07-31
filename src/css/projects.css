@@ -94,7 +94,12 @@
   display: flex;
   margin-top: 32px;
   gap: 12px;
+  margin-left: 30px;
 }
+
+/* .benefit-icon {
+  margin: -15px;
+} */
 
 @media only screen and (min-width: 375px) {
   .wrap_1 {
