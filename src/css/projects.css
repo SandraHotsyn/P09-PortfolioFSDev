@@ -79,6 +79,25 @@
   margin: 0 auto;
   padding: 13px 32px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  transition: border-color var(--wht);
+  background-color: transparent;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.btn:hover {
+  border: 2px solid currentColor;
+  border-color: var(--wht);
+}
+.benefit-icon.project-icon {
+  width: 24px;
+  height: 24px;
+}
 .wrap_2 {
   border-radius: 0 0 24px 24px;
   background: var(--cbg);
