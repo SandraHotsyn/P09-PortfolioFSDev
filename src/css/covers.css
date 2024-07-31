@@ -3,11 +3,11 @@
 
  
     .covers-list {
-      animation: marqueeScroll 30s linear infinite;
         display: flex;
         gap: 24px;
         flex-wrap: wrap;
-        width: 200%; 
+        width: 270%;
+        animation: marqueeScroll 20s linear infinite alternate;
     }
       .covers-foto img {
         width: 544px;
@@ -29,6 +29,11 @@
           background-size: cover;  
           background-repeat: no-repeat; 
       }
+      .covers-foto:hover img {
+        transform: rotate(16deg) translateY(10px) scale(1.05); 
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+        border-radius: 15px;
+      }
       @keyframes marqueeScroll {
         from {
           transform: translateX(0);
@@ -43,11 +48,11 @@
 
   @media (min-width: 768px) {
    .covers-list {
-    animation: marqueeScroll 30s linear infinite;
-        display: flex;
-        gap: 48px;
-        flex-wrap: wrap;
-        width: 200%;   
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    width: 270%;
+    animation: marqueeScroll 20s linear infinite alternate;
    } 
    .covers {
     margin-top: 96px;
@@ -71,6 +76,11 @@
   background-position: center;
   background-repeat: no-repeat; 
   }
+  .covers-foto:hover img {
+    transform: rotate(16deg) translateY(10px) scale(1.05); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 15px;
+  }
   @keyframes marqueeScroll {
     from {
       transform: translateX(0);
@@ -86,7 +96,6 @@
   .covers-container {
     overflow: hidden;
     margin: 0 auto;
-    max-width: 1440px;
     height: 960px;
     position: relative;
     background-image: url('/img/covers/background.png'); 
@@ -102,8 +111,8 @@
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
-    width: 200%; 
-    animation: marqueeScroll 30s linear infinite;
+    width: 270%;
+    animation: marqueeScroll 20s linear infinite alternate;
   }
   
   
@@ -113,15 +122,21 @@
     transform: rotate(16deg) translateY(10px) ;
     transform-origin: center;
     display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .covers-foto:hover img {
+    transform: rotate(16deg) translateY(10px) scale(1.05); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 15px;
   }
   
   @keyframes marqueeScroll {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
     }
-    to {
-      transform: translateX(-50%);
     }
-  }
-}
   
