@@ -6,7 +6,7 @@
         display: flex;
         gap: 24px;
         flex-wrap: wrap;
-        width: 270%;
+        width: 200%;
         animation: marqueeScroll 20s linear infinite alternate;
     }
       .covers-foto img {
@@ -28,6 +28,7 @@
             background-image: url('/img/covers/background.png'); 
           background-size: cover;  
           background-repeat: no-repeat; 
+          background-position: center;
       }
       .covers-foto:hover img {
         transform: rotate(16deg) translateY(10px) scale(1.05); 
@@ -51,7 +52,7 @@
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
-    width: 270%;
+    width: 200%;
     animation: marqueeScroll 20s linear infinite alternate;
    } 
    .covers {
@@ -111,8 +112,8 @@
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
-    width: 270%;
-    animation: marqueeScroll 20s linear infinite alternate;
+    width: 200%; 
+    animation: marqueeScroll 30s linear infinite;
   }
   
   
