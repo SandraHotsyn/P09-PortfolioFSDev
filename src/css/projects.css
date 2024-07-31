@@ -1,14 +1,11 @@
 .swiper {
   border-radius: 24px;
-  /* max-height: 812px; */
   max-width: 320px;
 }
 
 .projects-container {
-  margin: 64px 16px;
+  margin: 64px 0;
 }
-/* .swiper-wrapper {
-} */
 
 .projects {
   font-weight: 600;
@@ -19,26 +16,28 @@
   margin-bottom: 32px;
 }
 
-.swiper-slide {
-  min-width: 320px;
+.swiper-wrapper > .swiper-slide {
+  width: 320px;
   max-height: 812px;
 }
 
 .wrap_1 {
-  background: #fafafa;
+  background: var(--wht);
+  padding: 32px;
   height: 417px;
 }
 
 .wrap_text {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   flex-wrap: wrap;
-  min-width: 279px;
+  /* min-width: 279px; */
 
-  max-height: 96px;
-  padding: 32px 0 0;
-  margin: 0 32px 96px;
+  /* max-height: 96px; */
+  /* padding: 32px 0 0; */
+  /* margin: 0 32px 96px; */
   gap: 6px 6px;
+  margin-bottom: 96px;
 }
 
 .text {
@@ -48,8 +47,28 @@
   color: #1c1d20;
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
-  padding: 13px 18px;
-  min-width: 80px;
+  /* padding: 13px 18px; */
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react {
+  width: 80px;
+}
+
+.js {
+  width: 57px;
+}
+
+.node {
+  width: 94px;
+}
+
+.git {
+  width: 63px;
 }
 
 .title {
@@ -58,23 +77,33 @@
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: #1c1d20;
-  margin: 0 32px 45px 32px;
+  /* margin: 0 32px 45px 32px; */
+  margin-bottom: 32px;
 }
+
 .btn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 20px;
+  color: var(--wht);
+
+  display: block;
   border: none;
   border-radius: 60px;
   width: 141px;
   height: 45px;
-  color: #fafafa;
-  background: #ed3b44;
-  margin-left: 32px;
-  margin-bottom: 32px;
-  padding: 18px 50px;
+  color: var(--wht);
+  background: var(--red);
+  margin: 0 auto;
+  /* margin-left: 32px; */
+  /* margin-bottom: 32px; */
+  padding: 13px 32px;
 }
 .wrap_2 {
   border-radius: 0 0 24px 24px;
   background: #242527;
-  padding: 100px 16px;
+  padding: 90px 12px;
 }
 
 .project-img {
@@ -86,6 +115,12 @@
   display: flex;
   margin-top: 32px;
   gap: 12px;
+}
+
+@media only screen and (min-width: 375px) {
+  .wrap_2 {
+    padding: 100px 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
