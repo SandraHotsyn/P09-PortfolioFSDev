@@ -16,7 +16,7 @@ btnPrevEl.style.margin = '0';
 
 function upSwiperSlideDisplay() {
   const swiperSlides = document.querySelectorAll('.swiper-slide');
-  if (window.innerWidth > 1440) {
+  if (window.innerWidth >= 1440) {
     swiperSlides.forEach(slide => {
       slide.style.display = 'flex';
     });
@@ -30,8 +30,8 @@ upSwiperSlideDisplay();
 window.addEventListener('resize', upSwiperSlideDisplay);
 
 export const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  // spaceBetween: 30,
   loop: false,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -41,12 +41,12 @@ export const swiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: true,
   },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    4400: {
-      slidesPerView: 3,
-    },
-  },
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   1400: {
+  //     slidesPerView: 1,
+  //   },
+  // },
 });
