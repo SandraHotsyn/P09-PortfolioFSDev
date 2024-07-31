@@ -63,11 +63,14 @@
 }
 
 .order-link {
+  display: block;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 18px 36px;
+  padding: 18px 34px;
+  line-height: 20px;
   width: 187px;
   height: 55px;
+  margin-bottom: 64px;
 
   font-weight: 500;
   font-size: 16px;
@@ -97,6 +100,10 @@
   .benefits-item {
     width: calc((100% - 16px) / 2);
   }
+
+  .order-link {
+    margin-bottom: 96px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -111,5 +118,6 @@
 
   .order-link {
     align-self: flex-start;
+    margin-bottom: 164px;
   }
 }
