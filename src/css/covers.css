@@ -6,8 +6,8 @@
         display: flex;
         gap: 24px;
         flex-wrap: wrap;
-        width: 200%;
-        animation: marqueeScroll 20s linear infinite alternate;
+        width: 270%;
+        animation: marqueeScroll 15s linear infinite alternate;
     }
       .covers-foto img {
         width: 544px;
@@ -52,8 +52,8 @@
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
-    width: 200%;
-    animation: marqueeScroll 20s linear infinite alternate;
+    width: 270%;
+    animation: marqueeScroll 15s linear infinite alternate;
    } 
    .covers {
     margin-top: 96px;
@@ -112,8 +112,8 @@
     display: flex;
     gap: 48px;
     flex-wrap: wrap;
-    width: 200%; 
-    animation: marqueeScroll 30s linear infinite;
+    width: 270%; 
+    animation: marqueeScroll 15s linear infinite alternate;
   }
   
   
