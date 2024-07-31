@@ -106,12 +106,12 @@
   border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
-.reviews-icon {
+/* .reviews-icon {
   width: 24px;
   height: 24px;
   fill: currentColor;
   transition: fill var(--wht);
-}
+} */
 
 .reviews-swiper-button-left.swiper-button-disabled .reviews-icon,
 .reviews-swiper-button-right.swiper-button-disabled .reviews-icon {
