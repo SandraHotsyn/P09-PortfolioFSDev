@@ -1,4 +1,5 @@
 .faq-container {
+  width: 100%;
   margin-top: 64px;
 }
 
@@ -7,12 +8,13 @@
   color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
   margin-bottom: 32px;
+  max-width: 1440px;
 }
 
 .faq-item {
   padding: 20px 0;
-  border-top: 1px solid var(--lgr);
-  border-bottom: 1px solid var(--lgr);
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .faq-header {
@@ -25,7 +27,9 @@
   padding-left: 16px;
   font-size: 20px;
   font-weight: 600;
+  min-width: 265px;
   cursor: pointer;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .faq-content {
@@ -52,6 +56,17 @@
 
 .faq-btn-trigger:hover {
   color: var(--wht);
+}
+
+.faq-btn-open {
+  display: inline-block;
+  stroke: #fafafa;
+  fill: var(--wht);
+}
+
+.faq-btn-close {
+  display: none;
+  fill: var(--wht);
 }
 
 .faq-header:hover,
