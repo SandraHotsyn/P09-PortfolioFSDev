@@ -1,28 +1,26 @@
-**Project 09 JavaScript**
+**PROJECT 09 JavaScript**
 
-Team Lead - @Sandra Hotsyn
+**Team Lead** - _@Sandra Hotsyn_
 
-Scrum Master - @Alona Adamska
+**Scrum Master** - _@Alona Adamska_
 
 
-Header - @Olga Synko
+**Header** - _@Olga Synko_
 
-Hero - @Nadiia Yuce
+**Hero & Benefits** - _@Nadiia Yuce_
 
-About me Accordion - @Alona Adamska
+**About me (Accordion)** - _@Alona Adamska_
 
-About me Swiper - @Viktor
+**About me (Swiper)** - _@Viktor_
 
-Benefits - @Nadiia Yuce
+**Projects** - _@Саша Нетеса_
 
-Projects - @Саша Нетеса
+**Faq** - _@Віктор_
 
-Faq - @Віктор
+**Covers** - _@Andrey_
 
-Covers - @Andrey
+**Reviews** - _@Олександра Савенко_
 
-Reviews - @Олександра Савенко
+**Footer (Work together) + cursor** - _@Daria Shevchenko_
 
-Footer (Work together) + cursor - @Daria Shevchenko
-
-Scroll to up + animate (adiitional feature) - @Владислав Яворский
+**Scroll to up + animate (adiitional feature)** - _@Владислав Яворский_

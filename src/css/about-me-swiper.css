@@ -2,44 +2,134 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .circle-slider {
+    background-color: #1C1D20;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.circle-slider {
     display: flex;
+    /* justify-content: center; */
     align-items: center;
-  }
-  
-  .circle-container {
+    position: relative;
+    width: 100%;
+    margin-top: 32px;
+    /* margin-bottom: 64px; */
+}
+
+.circle-container {
     display: flex;
     transition: transform 0.5s ease;
-    overflow: hidden; /* Сховати вміст, що виходить за межі */
-    width: 350px; /* Ширина контейнера з кружечками */
-  }
-  
-  .circle {
-    width: 50px;
-    height: 50px;
+    overflow: hidden;
+    width: calc(100vw - 100px);
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    /* max-width: 130px;
+    max-height: 130px; */
     border-radius: 50%;
-    background-color: #3498db;
-    color: white;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    background-color: #1C1D20;
+    color: #FAFAFA;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px; /* Відстань між кружечками */
-  } 
+    margin: 0;
+}
 
-  /* Стилізація для першого кружечка */
 .circle:first-child {
-    background-color: #e74c3c; /* Інший колір для першого кружечка */
-  }
-  
-  .next-button {
-    margin-left: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
+    background-color: #e74c3c;
+}
+
+.btn-about-me {
+    display: flex;
+    justify-content: end;
+}
+
+.next-button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3B3B3B;
+    background-color: transparent;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
     cursor: pointer;
-  }
-  
+    border-radius: 50%;
+    padding: 0;
+    position: absolute; /* Changed from relative to absolute */
+    /* right: 10px; */
+}
+
+.next-button svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.next-button:hover svg path {
+    stroke: white; 
+}
+
+.circle-container::-webkit-scrollbar {
+    display: none;
+}
+
+.circle-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 374px) {
+    .circle-container .circle:nth-child(n+3) {
+        display: none;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* .btn-about-me {
+        : none;
+    } */
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .circle-container .circle:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .circle-container .circle:nth-child(n+4) {
+        display: none;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .circle-container .circle {
+        display: flex !important;
+    }
+    .about-me-wiper {
+        width: 1440px;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+}
