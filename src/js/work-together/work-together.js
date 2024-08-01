@@ -1,12 +1,11 @@
-import iziToast from 'izitoast';
 import axios from 'axios';
 
 export function initWorkTogetherSection() {
   const elms = {
     form: document.querySelector('.footer-form'),
     email: document.querySelector('.footer-email-input'),
-    successLabel: document.querySelector('.success-label'),
-    errorLabel: document.querySelector('.error-label'),
+    successLabel: document.querySelector('.text-valid'),
+    errorLabel: document.querySelector('.text-invalid'),
     comments: document.querySelector('.footer-comments-input'),
     btn: document.querySelector('.footer-send-button'),
     modalBackdrop: document.querySelector('.footer-modal-backdrop'),
@@ -54,6 +53,10 @@ export function initWorkTogetherSection() {
         elms.modalBackdrop.classList.add('visually-hidden');
         elms.modalOverlay.classList.add('visually-hidden');
       }, 500);
+
+      // Reset form inputs
+      elms.form.reset();
+      removeDataFromLocalStorage();
 
       elms.modalOverlay.children.close_button.removeEventListener('click', modals.close);
       elms.modalBackdrop.removeEventListener('click', onBackdropClick);
@@ -137,7 +140,7 @@ export function initWorkTogetherSection() {
         formElm.elements.email.value.trim() === '' ||
         formElm.elements.comments.value.trim() === ''
       ) {
-        messages.showError();
+        labels.addError();
 
         return;
       }
