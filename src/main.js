@@ -6,10 +6,11 @@ functionHeader();
 // ==== About me accordion ====
 import { initializeAccordionAboutMe } from './js/about-me-accordion/about-me-accordion';
 initializeAccordionAboutMe();
-// ==== About me accordion ====//
+// ===== END About me accordion =====
 
+// ==== About me swiper ====
 import './js/about-me-swiper/about-me-swiper';
-
+// ===== END About me swiper =====
 
 // ===== FAQ =====
 import { initializeAccordion } from './js/faq/faq';

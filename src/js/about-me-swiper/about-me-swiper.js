@@ -2,22 +2,18 @@ function initCircleSlider() {
     const circleContainer = document.querySelector('.circle-container');
     const nextButton = document.getElementById('nextButton');
 
-    // Масив для зберігання порядку кружечків
     let circlesArray = Array.from(circleContainer.children);
 
     nextButton.addEventListener('click', () => {
-        // Вилучаємо перший кружечок з масиву та додаємо його в кінець
         const firstCircle = circlesArray.shift();
         circlesArray.push(firstCircle);
 
-        // Оновлюємо відображення кружечків
-        circleContainer.innerHTML = ''; // Очищаємо контейнер
+        circleContainer.innerHTML = '';
         circlesArray.forEach(circle => {
-            circleContainer.appendChild(circle); // Додаємо кружечки в новому порядку
+            circleContainer.appendChild(circle);
         });
     });
 
-    // Добавляем обработчик для клавиш стрелок и Tab
     document.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowRight' || event.key === 'Tab') {
             event.preventDefault();
@@ -38,7 +34,6 @@ function initCircleSlider() {
         }
     });
 
-    // Добавляем поддержку сенсорных экранов
     let startX;
     circleContainer.addEventListener('touchstart', (event) => {
         startX = event.touches[0].clientX;
@@ -48,7 +43,7 @@ function initCircleSlider() {
         if (!startX) return;
         const endX = event.touches[0].clientX;
         const diff = startX - endX;
-        if (Math.abs(diff) > 30) { // Чувствительность свайпа
+        if (Math.abs(diff) > 30) {
             if (diff > 0) {
                 const firstCircle = circlesArray.shift();
                 circlesArray.push(firstCircle);
@@ -72,31 +67,3 @@ function initCircleSlider() {
 document.addEventListener('DOMContentLoaded', () => {
     initCircleSlider();
 });
-
-
-
-
-
-
-// function initCircleSlider() {
-//     const circleContainer = document.querySelector('.circle-container');
-//     const nextButton = document.getElementById('nextButton');
-  
-    
-//     let circlesArray = Array.from(circleContainer.children);
-  
-//     nextButton.addEventListener('click', () => {
-      
-//       const firstCircle = circlesArray.shift();
-//       circlesArray.push(firstCircle);
-  
-      
-//       circleContainer.innerHTML = '';
-//       circlesArray.forEach(circle => {
-//         circleContainer.appendChild(circle);
-//       });
-//     });
-//   }
-//   document.addEventListener('DOMContentLoaded', () => {
-//     initCircleSlider();
-//   });
