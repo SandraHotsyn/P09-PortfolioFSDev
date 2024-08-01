@@ -162,7 +162,6 @@ export function initWorkTogetherSection() {
       elms.comments.value = '';
     } catch (error) {
       console.log(error);
-      iziToast.error({ title: 'Error', message: 'Invalid email. Please enter a valid email.' });
     }
   };
 
