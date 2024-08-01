@@ -7,7 +7,7 @@ btnNextEl.style.position = 'static';
 btnNextEl.style.width = '64px';
 btnNextEl.style.height = '64px';
 btnNextEl.style.margin = '0';
-// btnNextEl.style.border = '1px solid rgba(250, 250, 250, 0.5)';
+btnNextEl.style.border = '1px solid rgba(250, 250, 250, 0.5)';
 btnNextEl.style.borderRadius = '60px';
 
 const btnPrevEl = document.querySelector('.swiper-button-prev ');
@@ -16,12 +16,12 @@ btnPrevEl.style.width = '64px';
 btnPrevEl.style.height = '64px';
 btnPrevEl.style.color = '#1c1d20';
 btnPrevEl.style.margin = '0';
-// btnPrevEl.style.border = '1px solid rgba(250, 250, 250, 0.5)';
+btnPrevEl.style.border = '1px solid rgba(250, 250, 250, 0.5)';
 btnPrevEl.style.borderRadius = '60px';
-// btnPrevEl.style.opacity = '1';
+
 export const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
-  // spaceBetween: 30,
+  spaceBetween: 15,
   loop: false,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -31,15 +31,8 @@ export const swiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: true,
   },
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //   },
-  //   1400: {
-  //     slidesPerView: 1,
-  //   },
-  // },
 });
+
 function upSwiperSlideDisplay() {
   const swiperSlides = document.querySelectorAll('.swiper-slide');
   if (window.innerWidth >= 1440) {

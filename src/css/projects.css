@@ -68,7 +68,6 @@
   letter-spacing: -0.02em;
   line-height: 20px;
   color: var(--wht);
-
   display: block;
   border: none;
   border-radius: 60px;
@@ -79,6 +78,7 @@
   margin: 0 auto;
   padding: 13px 32px;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   border-radius: 50%;
@@ -86,18 +86,21 @@
   transition: border-color var(--wht);
   background-color: transparent;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
-.btn:hover {
+/* .btn:hover {
   border: 2px solid currentColor;
   border-color: var(--wht);
-}
+} */
+
 .benefit-icon.project-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
+
 .wrap_2 {
   border-radius: 0 0 24px 24px;
   background: var(--cbg);
@@ -113,12 +116,7 @@
   display: flex;
   margin-top: 32px;
   gap: 12px;
-  margin-left: 30px;
 }
-
-/* .benefit-icon {
-  margin: -15px;
-} */
 
 @media only screen and (min-width: 375px) {
   .wrap_1 {
