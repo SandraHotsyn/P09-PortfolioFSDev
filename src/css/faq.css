@@ -4,11 +4,11 @@
 }
 
 .faq-title {
+  max-width: 1440px;
+  margin-bottom: 32px;
   font-weight: 600;
   color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
-  margin-bottom: 32px;
-  max-width: 1440px;
 }
 
 .faq-item {
@@ -18,40 +18,50 @@
 }
 
 .faq-header {
+  min-width: 265px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding-left: 20px;
   left: -20px;
   border-radius: 50px;
-  padding-left: 16px;
   font-size: 20px;
   font-weight: 600;
-  min-width: 265px;
+  letter-spacing: -0.02em;
   cursor: pointer;
   transition: box-shadow 300ms ease-in-out;
 }
 
 .faq-content {
+  max-height: 0;
   margin-top: 16px;
   color: rgba(250, 250, 250, 0.6);
-  display: none;
+  opacity: 0;
+  overflow: hidden;
+  transition-property: opacity, max-height;
+  transition: opacity 0.3s ease 0.1s, max-height 0.5s ease 0s;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  opacity: 1;
 }
 
 .faq-btn-trigger {
-  flex-shrink: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
   display: flex;
+  background: none;
+  flex-shrink: 0;
+  margin-left: 44px;
+  padding: 0;
+  width: 34px;
+  height: 34px;
   align-items: center;
+  border: none;
   border: 1px solid var(--lgr);
   border-radius: 100px;
   padding: 7px;
-  width: 34px;
-  height: 34px;
-  margin-left: 44px;
+  cursor: pointer;
 }
 
 .faq-btn-trigger:hover {
@@ -85,7 +95,6 @@
 
   .faq-content {
     max-width: 656px;
-    margin-top: 26px;
   }
 
   .faq-btn-trigger {
