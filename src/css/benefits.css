@@ -107,6 +107,9 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .benefits {
+    padding-top: 164px;
+  }
   .benefits .container {
     display: flex;
     justify-content: space-between;
