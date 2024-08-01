@@ -1,4 +1,5 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
 
 export function initWorkTogetherSection() {
   const elms = {
@@ -34,13 +35,8 @@ export function initWorkTogetherSection() {
     removeBoth() {
       elms.email.classList.remove('input-success');
       elms.email.classList.remove('input-error');
-      elms.successLabel.classList.remove('is-open');
-      elms.errorLabel.classList.remove('is-open');
-
-      setTimeout(() => {
-        elms.successLabel.classList.add('visually-hidden');
-        elms.errorLabel.classList.add('visually-hidden');
-      }, 250);
+      elms.successLabel.classList.add('visually-hidden');
+      elms.errorLabel.classList.add('visually-hidden');
     },
   };
 
@@ -115,6 +111,10 @@ export function initWorkTogetherSection() {
   const onButtonClick = () => {
     if (!isValidEmail(elms.form.elements.email.value)) {
       labels.addError();
+      iziToast.error({
+        title: 'Error',
+        message: 'Invalid email, please try again.',
+      });
     }
   };
 
@@ -141,7 +141,10 @@ export function initWorkTogetherSection() {
         formElm.elements.comments.value.trim() === ''
       ) {
         labels.addError();
-
+        iziToast.error({
+          title: 'Error',
+          message: 'Please fill out all fields.',
+        });
         return;
       }
 
@@ -180,19 +183,13 @@ export function initWorkTogetherSection() {
     if (event.target.value.length > 31 && innerWidth >= 1440) {
       event.target.value = event.target.value.slice(0, 29) + '...';
     }
-    if (
-      !elms.errorLabel.classList.contains('visually-hidden') ||
-      !elms.successLabel.classList.contains('visually-hidden')
-    ) {
-      if (isValidEmail(event.target.value)) {
-        labels.addSuccess();
-      }
-      if (!isValidEmail(event.target.value)) {
-        labels.addError();
-      }
-      if (event.target.value === '') {
-        labels.removeBoth();
-      }
+    if (isValidEmail(event.target.value)) {
+      labels.addSuccess();
+    } else {
+      labels.addError();
+    }
+    if (event.target.value === '') {
+      labels.removeBoth();
     }
   };
 
