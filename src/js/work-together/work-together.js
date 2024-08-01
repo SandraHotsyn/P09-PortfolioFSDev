@@ -157,8 +157,9 @@ export function initWorkTogetherSection() {
       labels.removeBoth();
 
       formElm.reset();
-
       removeDataFromLocalStorage();
+      elms.email.value = '';
+      elms.comments.value = '';
     } catch (error) {
       console.log(error);
     }
