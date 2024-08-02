@@ -1,4 +1,3 @@
-
 .about-me-description {
   margin-bottom: 32px;
   margin-top: 96px;
@@ -42,8 +41,14 @@
   font-family: 'Inter Tight', sans-serif;
 }
 
+
 .content-first {
   padding-bottom: 32px;
+}
+
+.acrdn-about-me-container {
+  list-style: none;
+  padding: 0;
 }
 
 .acrdn-button-list {
@@ -51,24 +56,35 @@
   padding-bottom: 20px;
   border-bottom: 1px solid var(--lgr);
 }
+
 .acrdn-button-item {
   margin-bottom: 12px;
-}
-
-
-.about-me-acrdn-button {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   height: 40px;
   padding: 0;
   width: 100%;
   cursor: pointer;
   background-color: transparent;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--lgr);
+}
+
+.about-me-acrdn-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
   transition: color 0.25s ease;
-  position: relative;
-  text-decoration: none;
-  margin: 0;
   border: 0;
   font-weight: 600;
   font-size: 16px;
@@ -79,22 +95,34 @@
   text-align: left;
 }
 
+.about-me-btn-open,
+.about-me-btn-close {
+  width: 24px;
+  height: 24px;
+}
 
-.about-me-acrdn-button .icon-arrow-up,
-.about-me-acrdn-button .icon-arrow-down {
+.about-me-btn-open {
   display: none;
 }
 
-.about-me-acrdn-button .icon-arrow-up.visible {
-  display: inline-block;
+.about-me-btn-open.visible {
+  display: block;
 }
 
-.about-me-acrdn-button .icon-arrow-down.visible {
-  display: inline-block;
+.about-me-btn-close.visible {
+  display: none;
 }
 
-.about-me-acrdn-button:focus {
-  color: #8a8a8a;
+.acrdn-button-list.is-active .about-me-btn-open {
+  display: block;
+}
+
+.acrdn-button-list.is-active .about-me-btn-close {
+  display: none;
+}
+
+.acrdn-button-list .about-me-btn-close {
+  display: block;
 }
 
 .content-about-me {
@@ -105,15 +133,15 @@
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
+  transition: height 0.5s ease, visibility 0.3s ease;
 }
 
 .content-about-me.is-active {
   visibility: visible;
 }
 
-
-.icon-acrdn {
-  display: inline-block;
+.icon-about {
+ 
   stroke-width: 0;
   width: 40px;
   height: 40px;
@@ -125,9 +153,7 @@
   cursor: pointer;
   stroke: #fafafa;
   fill: transparent;
-
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -178,10 +204,11 @@
   .content-about-me-text {
     max-width: 612px;
     margin-right: 68px;
+  
   }
 
   .content-about-me {
-   padding-left: 696px;
+    padding-left: 696px;
   }
 
   .about-me-box picture,
@@ -191,6 +218,6 @@
   }
 
   .content-first {
-    margin-bottom: 32px;
+    padding-bottom: 16px;
   }
 }
