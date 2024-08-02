@@ -74,6 +74,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--lgr);
+  cursor: pointer;
 }
 
 .about-me-acrdn-button {
@@ -83,7 +84,7 @@
   height: 40px;
   padding: 0;
   cursor: pointer;
-  background-color: transparent;
+  background: none;
   transition: color 0.25s ease;
   border: 0;
   font-weight: 600;
@@ -93,6 +94,8 @@
   text-transform: uppercase;
   color: var(--lgr);
   text-align: left;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 .about-me-btn-open,
@@ -152,7 +155,7 @@
   background: none;
   cursor: pointer;
   stroke: #fafafa;
-  fill: transparent;
+
 }
 
 
